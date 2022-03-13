@@ -1,6 +1,5 @@
 # loki_b6
-Kelompok 6 - Pemograman Web B
-Anggota:
+Pemograman Web B - Anggota Kelompok 6:
 - Muhammad Farhan Ananda Mirzah (2011522022)
 - Nadilla Saraswati (2011521004)
 - Sri Ulfa Berliani (2011522026)
