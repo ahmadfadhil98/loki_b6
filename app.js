@@ -11,14 +11,14 @@ app.get('/about', function(request, response){
 	response.send('Ini adalah halaman About')
 })
 
-// Bagian Farhan (nomor 1 - 5?)
+// Bagian Farhan (nomor 1 - 5)
 // Nomor 1. Login
 app.get('/login', function(request, response){
 	response.send('Ini adalah halaman Login')
 })
 
 // Nomor 2. Logout
-app.get('/x', function(request, response){
+app.get('/logout', function(request, response){
 	response.send('Ini adalah halaman Logout')
 })
 
