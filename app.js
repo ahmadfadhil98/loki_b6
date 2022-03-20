@@ -63,6 +63,32 @@ app.get('/ubah_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah CPMK Mata Kuliah')
 })
 
+//Bagian Nadilla (11-15)
+//Nomor 11 (Menghapus CPMK matkul)
+app.get('/hapus_cpmk', function(request, response){
+	response.send('Ini adalah halaman untuk menghapus CPMK Mata Kuliah')
+})
+
+//Nomor 12 (Menambah Referensi)
+app.get('/tambah_referensi', function(request, response){
+	response.send('Ini adalah halaman untuk menambah referensi')
+})
+
+//Nomor 13 (Mengubah Referensi)
+app.get('/ubah_referensi', function(request, response){
+	response.send('Ini adalah halaman untuk mengubah referensi')
+})
+
+//Nomor 14 (Menghapus Referensi)
+app.get('/hapus_referensi', function(request, response){
+	response.send('Ini adalah halaman untuk menghapus referensi')
+})
+
+//Nomor 15 (Menambah Komponen Penilaian)
+app.get('/tambah_nilai', function(request, response){
+	response.send('Ini adalah halaman untuk menambah komponen penilaian')
+})
+
 // Bagian Aisyah (nomor 16-19)
 // Nomor 16 (Mengubah Komponen Penilaian)
 app.get('/ubah_nilai', function(request, response){
