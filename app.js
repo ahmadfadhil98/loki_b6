@@ -12,6 +12,10 @@ app.get('/about', function(request, response){
 })
 
 // Bagian Farhan (nomor 1 - 5?)
+// Nomor 1 (Login)
+app.get('/login', function(request, response){
+	response.send('Ini adalah halaman Login')
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
