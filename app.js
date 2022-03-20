@@ -18,22 +18,22 @@ app.get('/login', function(request, response){
 })
 
 // Bagian Aisyah (nomor 16-19)
-// Nomor 16 (Dosen Dapat Mengubah Komponen Penilaian)
+// Nomor 16 (Mengubah Komponen Penilaian)
 app.get('/ubah_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Mengubah Komponen Penilaian')
 })
 
-// Nomor 17 (Dosen Dapat Menghapus Komponen Penilaian)
+// Nomor 17 (Menghapus Komponen Penilaian)
 app.get('/Hapus_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Menghapus Komponen Penilaian')
 })
 
-// Nomor 18 (Dosen dapat menambah pertemuan mingguan RPS)
+// Nomor 18 (Menambah pertemuan mingguan RPS)
 app.get('/tambah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menambah pertemuan mingguan RPS')
 })
 
-// Nomor 19 (Dosen dapat mengubah pertemuan mingguan yang ada dalam RPS.)
+// Nomor 19 (Mengubah pertemuan mingguan yang ada dalam RPS.)
 app.get('/mengubah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.')
 })
