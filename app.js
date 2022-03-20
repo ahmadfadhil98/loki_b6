@@ -40,7 +40,7 @@ app.get('/cetak_laporan', function(request, response){
 //Bagian Ulfa (6-10)
 //Nomor 6 (Fitur Tambah RPS)
 app.get('/tambah_rps', function(request, response){
-	response.send('Ini adalah halaman untuk Menambahkan RPS Baru)
+	response.send('Ini adalah halaman untuk Menambahkan RPS Baru')
 })
 	
 //Nomor 7 (Mengubah RPS)
@@ -49,7 +49,7 @@ app.get('/ubah_rps', function(request, response){
 })
 
 //Nomor 8 (Revisi RPS Lama)
-app.get('/Revisi RPS', function(request, response){
+app.get('/revisi_rps', function(request, response){
 	response.send('Ini adalah halaman untuk Revisi RPS lama ke RPS Versi berikutnya')
 })
 	
