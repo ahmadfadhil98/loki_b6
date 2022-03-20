@@ -12,9 +12,29 @@ app.get('/about', function(request, response){
 })
 
 // Bagian Farhan (nomor 1 - 5?)
-// Nomor 1 (Login)
+// Nomor 1. Login
 app.get('/login', function(request, response){
 	response.send('Ini adalah halaman Login')
+})
+
+// Nomor 2. Logout
+app.get('/x', function(request, response){
+	response.send('Ini adalah halaman Logout')
+})
+
+// Nomor 3. Menentukan dosen yang akan membuat/memperbaharui RPS
+app.get('/pilih_dosen', function(request, response){
+	response.send('Ini adalah halaman untuk menentukan dosen yang akan membuat/memperbaharui RPS')
+})
+
+// Nomor 4. Lihat laporan RPS
+app.get('/laporan_rps', function(request, response){
+	response.send('Ini adalah halaman untuk melihat laporan RPS yang ada')
+})
+
+// Nomor 5. Cetak RPS
+app.get('/cetak_laporan', function(request, response){
+	response.send('Ini adalah halaman untuk mencetak laporan RPS')
 })
 
 // Bagian Aisyah (nomor 16-19)
