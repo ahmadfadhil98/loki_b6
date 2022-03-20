@@ -84,7 +84,26 @@ app.get('/mengubah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.')
 })
 
+// Bagian Faradila (Nomor 20-23)
+// Nomor 20. Menghapus pertemuan mingguan yang ada dalam RPS)
+app.get('/hapus_pertemuan', function(request, response){
+	response.send('Ini adalah halaman Dosen menghapus pertemuan mingguan yang ada dalam RPS')
+})
 
+// Nomor 21. Pencarian berdasarkan nama mata kuliah atau kode matakuliah terhadap RPS yang ada)
+app.get('/cari_matkul', function(request, response){
+	response.send('Ini adalah halaman Pencarian')
+})
+
+// Nomor 22. Lihat detail RPS
+app.get('/lihat_detail', function(request, response){
+	response.send('Ini adalah halaman Mahasiswa lihat detail RPS')
+})
+
+// Nomor 23. Mengeksport RPS matakuliah menjadi PDF)
+app.get('/eksport_RPS', function(request, response){
+	response.send('Ini adalah halaman Pengguna mengeksport RPS matakuliah menjadi PDF')
+})
 
 
 app.listen(port, () => {
