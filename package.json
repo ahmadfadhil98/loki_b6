@@ -1,0 +1,20 @@
+{
+  "name": "loki_b6",
+  "version": "1.0.0",
+  "description": "Project Kelompok 6 Pemograman Web B",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarhanMirzah/loki_b6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
