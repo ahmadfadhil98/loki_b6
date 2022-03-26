@@ -12,10 +12,19 @@ app.get('/about', function(request, response){
 })
 
 // Bagian Farhan (nomor 1 - 5)
-// Nomor 1. Login
+// Nomor 1. Login (GET)
 app.get('/login', function(request, response){
 	response.send('Ini adalah halaman Login')
 })
+
+// Login (POST) (Tes http://localhost:3000/login di Postman)
+app.post("/login", (req, res) => {
+  let obj = {
+    "message": "Anda berhasil Login",
+    "status": 1
+  }
+  res.json(obj);
+});
 
 // Nomor 2. Logout
 app.get('/logout', function(request, response){
