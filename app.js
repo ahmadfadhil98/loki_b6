@@ -115,26 +115,80 @@ app.get('/tambah_nilai', function(request, response){
 	response.send('Ini adalah halaman untuk menambah komponen penilaian')
 })
 
+
 // Bagian Aisyah (nomor 16-19)
 // Nomor 16 (Mengubah Komponen Penilaian)
 app.get('/ubah_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Mengubah Komponen Penilaian')
 })
 
+// ubah_nilai (POST) (Tes http://localhost:3000/ubah_nilai di Postman)
+app.put("/nilai/ubah_nilai", (req, res) => {
+  let obj = {
+    "message":"Update Komponen Nilai",
+      "id_class":001,
+      "Name":"PemWeb",
+      "komponen":[
+                    "1. Tugas   = 10%",
+                    "3. UTS     = 25%",
+                    "4. UAS     = 45%",
+                    "5. Kuis    = 15%",
+                    "6. Sikap   = 5%"
+       ]
+    }
+    res.json(del);
+    console.log("Komponen penilaian berhasil update");
+  });
+
+
 // Nomor 17 (Menghapus Komponen Penilaian)
 app.get('/Hapus_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Menghapus Komponen Penilaian')
 })
+
+// hapus_nilai (POST) (Tes http://localhost:3000/hapus_nilai di Postman)
+app.delete("/nilai/hapus_nilai", (req, res) => {
+  let obj = {
+     "message":"Delete Data Komponen Nilai",
+      "id_class":001,
+      "Name":"PemWeb",
+      "komponen":[
+                    "1. Tugas   = 25%",
+                    "3. UTS     = 30%",
+                    "4. UAS     = 45%",
+       ]
+    }
+    res.json(del);
+    console.log("Komponen penilaian berhasil dihapus");
+  });
 
 // Nomor 18 (Menambah pertemuan mingguan RPS)
 app.get('/tambah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menambah pertemuan mingguan RPS')
 })
 
+// tambah_pertemuan (POST) (Tes http://localhost:3000/tambah_pertemuan di Postman)
+app.post("/pertemuan/tambah_pertemuan", (req, res) => {
+  let obj = {
+    "message": "Ini adalah halaman Dosen menambah pertemuan mingguan RPS",
+    "status": 1
+  }
+  res.json(obj);
+});
+
 // Nomor 19 (Mengubah pertemuan mingguan yang ada dalam RPS.)
 app.get('/mengubah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.')
 })
+
+// mengubah_pertemuan (POST) (Tes http://localhost:3000/mengubah_pertemuan di Postman)
+app.put("/pertemuan/mengubah_pertemuan", (req, res) => {
+  let obj = {
+    "message": "Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.",
+    "status": 1
+  }
+  res.json(obj);
+});
 
 // Bagian Faradila (Nomor 20-23)
 // Nomor 20. Menghapus pertemuan mingguan yang ada dalam RPS)
