@@ -326,7 +326,8 @@ app.delete("/RPS/hapus_pertemuan", (req, res) => {
      "message":"Silahkan masukkan pertemuan yang akan dihapus",
       "id_class":"",
       "Name":"",
-      "Jadwal":""
+      "Jadwal":"",
+	"Status" : 1
        
     }
     res.json(obj);
@@ -363,7 +364,7 @@ app.get("/RPS/lihat_detail", (req, res) => {
 	  "Kode Dosen": 123
     }
     res.json(obj);
-	console.log("\n\nBerhasil melihat detail RPS\n");
+	console.log("\n\nBerhasil melihat data detail RPS\n");
   });
 
 // Nomor 23. Mengeksport RPS matakuliah menjadi PDF)
