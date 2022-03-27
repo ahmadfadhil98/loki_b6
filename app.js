@@ -248,6 +248,17 @@ app.put("/pertemuan/mengubah_pertemuan", (req, res) => {
 app.get('/hapus_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menghapus pertemuan mingguan yang ada dalam RPS')
 })
+// hapus_pertemuan (DELETE) (Tes http://localhost:3000/RPS/hapus_Pertemuan)
+app.delete("/RPS/hapus_pertemuan", (req, res) => {
+  let obj = {
+     "message":"Silahkan masukkan pertemuan yang akan dihapus",
+      "id_class":"",
+      "Name":"",
+      "Jadwal":""
+       ]
+    }
+    res.json(obj);
+  });
 
 // Nomor 21. Pencarian berdasarkan nama mata kuliah atau kode matakuliah terhadap RPS yang ada)
 app.get('/cari_matkul', function(request, response){
