@@ -112,7 +112,7 @@ app.get('/cpmk/tambah_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk menambahkan CPMK Mata Kuliah')
 })
 
-// Revisi RPS (POST) (Tes http://localhost:3000/cpmk/tambah_cpmk di Postman)
+// Tambah CPMK (POST) (Tes http://localhost:3000/cpmk/tambah_cpmk di Postman)
 app.post("/cpmk/tambah_cpmk", (req, res) => {
 	let obj = {
 	  "message": "Silahkan Tambah CPMK",
