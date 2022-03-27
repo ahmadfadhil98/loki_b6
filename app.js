@@ -320,7 +320,7 @@ app.post("/pertemuan/mengubah_pertemuan", (req, res) => {
 app.get('/hapus_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menghapus pertemuan mingguan yang ada dalam RPS')
 })
-// hapus_pertemuan (DELETE) (Tes http://localhost:3000/RPS/hapus_Pertemuan)
+// hapus_pertemuan (DELETE) (Tes http://localhost:3000/RPS/hapus_Pertemuan di Postman)
 app.delete("/RPS/hapus_pertemuan", (req, res) => {
   let obj = {
      "message":"Silahkan masukkan pertemuan yang akan dihapus",
@@ -337,7 +337,7 @@ app.delete("/RPS/hapus_pertemuan", (req, res) => {
 app.get('/cari_matkul', function(request, response){
 	response.send('Ini adalah halaman Pencarian')
 })
-// cari_matkul (GET) (Tes http://localhost:3000/RPS/cari_matkul)
+// cari_matkul (GET) (Tes http://localhost:3000/RPS/cari_matkul di Postman)
 app.get("/RPS/cari_matkul", (req, res) => {
   let obj = {
      "message":"silahkan masukkan nama/kode mata kuliah yang ingin dicari",
@@ -351,7 +351,7 @@ app.get("/RPS/cari_matkul", (req, res) => {
 app.get('/lihat_detail', function(request, response){
 	response.send('Ini adalah halaman Mahasiswa lihat detail RPS')
 })
-// lihat_detail (GET) (Tes http://localhost:3000/RPS/lihat_detail)
+// lihat_detail (GET) (Tes http://localhost:3000/RPS/lihat_detail di Postman)
 app.get("/RPS/lihat_detail", (req, res) => {
   let obj = {
      "message":"Detail RPS",
@@ -370,7 +370,7 @@ app.get("/RPS/lihat_detail", (req, res) => {
 app.get('/eksport_RPS', function(request, response){
 	response.send('Ini adalah halaman Pengguna mengeksport RPS matakuliah menjadi PDF')
 })
-// eksport_PDF (GET) (Tes http://localhost:3000/RPS/eksport_PDF)
+// eksport_PDF (GET) (Tes http://localhost:3000/RPS/eksport_PDF di Postman)
 app.get("/RPS/eksport_PDF", (req, res) => {
   let obj = {
      "message":"Silahkan masukkan RPS yang ingin di eksport ke PDF",
