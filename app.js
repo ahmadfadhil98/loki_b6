@@ -49,7 +49,7 @@ app.get('/cetak_laporan', function(request, response){
 
 //Bagian Ulfa (6-10)
 //Nomor 6 (Fitur Tambah RPS)
-app.get('/tambah_rps', function(request, response){
+app.get('/rps/tambah_rps', function(request, response){
 	response.send('Ini adalah halaman untuk Menambahkan RPS Baru')
 })
 
@@ -70,19 +70,62 @@ app.post("/rps/tambah_rps", (req, res) => {
 
 	
 //Nomor 7 (Mengubah RPS)
-app.get('/ubah_rps', function(request, response){
+app.get('/rps/ubah_rps', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah RPS')
 })
+// Ubah RPS (POST) (Tes http://localhost:3000/rps/ubah_rps di Postman)
+app.post("/ubah/tambah_rps", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Ubah RPS",
+	  "Mata Kuliah " :{
+	  "Nama Mata Kuliah" : "",
+	  "Kode Mata Kuliah" : "",
+	  "SKS" : "",
+	  "Semester" : "",
+	  "Kode Dosen" : ""
+	  }
+	}
+	res.json(obj);
+  });
 
 //Nomor 8 (Revisi RPS Lama)
-app.get('/revisi_rps', function(request, response){
+app.get('/rps/revisi_rps', function(request, response){
 	response.send('Ini adalah halaman untuk Revisi RPS lama ke RPS Versi berikutnya')
 })
+// Revisi RPS (POST) (Tes http://localhost:3000/rps/revisi_rps di Postman)
+app.post("/rps/revisi_rps", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Revisi RPS",
+	  "Mata Kuliah " :{
+	  "Nama Mata Kuliah" : "",
+	  "Kode Mata Kuliah" : "",
+	  "SKS" : "",
+	  "Semester" : "",
+	  "Kode Dosen" : ""
+	  }
+	}
+	res.json(obj);
+  });
 	
 //Nomor 9 (Menambah CPMK Matkul)
-app.get('/tambah_cpmk', function(request, response){
+app.get('/cpmk/tambah_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk menambahkan CPMK Mata Kuliah')
 })
+
+// Revisi RPS (POST) (Tes http://localhost:3000/cpmk/tambah_cpmk di Postman)
+app.post("/cpmk/tambah_cpmk", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Tambah CPMK",
+	  "Mata Kuliah " : "PBD",
+	  "CPMK " : "Mahasiswa memahami konsep dasar basis data"
+	  
+	  }
+	
+	res.json(obj);
+  });
+
+
+
 	
 //Nomor 10 (Mengubah CPMK matkul)
 app.get('/ubah_cpmk', function(request, response){
