@@ -182,11 +182,11 @@ app.post("/nilai/ubah_nilai", (req, res) => {
       "id_class":001,
       "Name":"PemWeb",
       "komponen":[
-                    "1. Tugas   = 10%",
-                    "3. UTS     = 25%",
-                    "4. UAS     = 45%",
-                    "5. Kuis    = 15%",
-                    "6. Sikap   = 5%"
+                    "1. Tugas       = 10%",
+                    "3. UTS         = 25%",
+                    "4. UAS         = 40%",
+                    "5. Kuis        = 15%",
+                    "6. Kehadiran   = 10%"
        ]
     }
    res.json(obj);
@@ -206,9 +206,9 @@ app.post("/nilai/hapus_nilai", (req, res) => {
       "id_class":001,
       "Name":"PemWeb",
       "komponen":[
-                    "1. Tugas   = 25%",
-                    "3. UTS     = 30%",
-                    "4. UAS     = 45%",
+                    "1. Tugas       = 10%",
+                    "3. UTS         = 25%",
+                    "4. UAS         = 40%",
        ]
     }
     res.json(obj);
