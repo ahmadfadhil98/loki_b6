@@ -193,7 +193,6 @@ app.post("/nilai/ubah_nilai", (req, res) => {
   });
 
 
-
 // Nomor 17 (Menghapus Komponen Penilaian)
 app.get('/nilai/hapus_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Menghapus Komponen Penilaian')
@@ -207,8 +206,8 @@ app.post("/nilai/hapus_nilai", (req, res) => {
       "Name":"PemWeb",
       "komponen":[
                     "1. Tugas       = 10%",
-                    "3. UTS         = 25%",
-                    "4. UAS         = 40%",
+                    "2. UTS         = 25%",
+                    "3. UAS         = 40%",
        ]
     }
     res.json(obj);
