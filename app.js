@@ -21,8 +21,8 @@ app.get('/login', function(request, response){
 // Tambahan komen bla bla bal
 app.post("/login", (req, res) => {
   let obj = {
-    "message": "Anda berhasil Login",
-    "status": 1
+    "message": "Anda sudah selesai Login",
+    "status": 0
   }
   res.json(obj);
 });
