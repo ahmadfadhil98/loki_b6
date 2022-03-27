@@ -79,6 +79,15 @@ app.get('/hapus_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk menghapus CPMK Mata Kuliah')
 })
 
+// Hapus CPMK (POST) (Tes http://localhost:3000/hapus_cpmk di Postman)
+app.post("/hapus_cpmk", (req, res) => {
+	let obj = {
+	  "message": "Anda berhasil masuk ke halaman hapus cpmk",
+	  "status": 1
+	}
+	res.json(obj);
+  });
+
 //Nomor 12 (Menambah Referensi)
 app.get('/tambah_referensi', function(request, response){
 	response.send('Ini adalah halaman untuk menambah referensi')
