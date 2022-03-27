@@ -255,7 +255,7 @@ app.delete("/RPS/hapus_pertemuan", (req, res) => {
       "id_class":"",
       "Name":"",
       "Jadwal":""
-       ]
+       
     }
     res.json(obj);
   });
