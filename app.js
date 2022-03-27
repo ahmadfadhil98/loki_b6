@@ -258,22 +258,60 @@ app.delete("/RPS/hapus_pertemuan", (req, res) => {
        
     }
     res.json(obj);
+	console.log("\n\nBerhasil menghapus pertemuan mingguan\n");
   });
 
 // Nomor 21. Pencarian berdasarkan nama mata kuliah atau kode matakuliah terhadap RPS yang ada)
 app.get('/cari_matkul', function(request, response){
 	response.send('Ini adalah halaman Pencarian')
 })
+// cari_matkul (GET) (Tes http://localhost:3000/RPS/cari_matkul)
+app.get("/RPS/cari_matkul", (req, res) => {
+  let obj = {
+     "message":"silahkan masukkan nama/kode mata kuliah yang ingin dicari",
+      "Mata kuliah":"",
+    }
+    res.json(obj);
+	console.log("\n\nBerhasil melihat RPS mata kuliah yang dicari \n");
+  });
 
 // Nomor 22. Lihat detail RPS
 app.get('/lihat_detail', function(request, response){
 	response.send('Ini adalah halaman Mahasiswa lihat detail RPS')
 })
+// lihat_detail (GET) (Tes http://localhost:3000/RPS/lihat_detail)
+app.get("/RPS/lihat_detail", (req, res) => {
+  let obj = {
+     "message":"Detail RPS",
+      "Mata kuliah":"Pemweb",
+	"Kode Mata kuliah":"JSI 101",
+	  "SKS":"3 SKS",
+	  "Prodi":"Sistem Informasi",
+	  "Semester": 4,
+	  "Kode Dosen": 123
+    }
+    res.json(obj);
+	console.log("\n\nBerhasil melihat detail RPS\n");
+  });
 
 // Nomor 23. Mengeksport RPS matakuliah menjadi PDF)
 app.get('/eksport_RPS', function(request, response){
 	response.send('Ini adalah halaman Pengguna mengeksport RPS matakuliah menjadi PDF')
 })
+// eksport_PDF (GET) (Tes http://localhost:3000/RPS/eksport_PDF)
+app.get("/RPS/eksport_PDF", (req, res) => {
+  let obj = {
+     "message":"Silahkan masukkan RPS yang ingin di eksport ke PDF",
+      "Mata kuliah":"Pemweb",
+	"Kode Mata kuliah":"JSI 101",
+	  "SKS":"3 SKS",
+	  "Prodi":"Sistem Informasi",
+	  "Semester": 4,
+	  "Kode Dosen": 123
+    }
+    res.json(obj);
+	console.log("\n\nBerhasil melakukan eksport ke PDF\n");
+  });
 
 
 app.listen(port, () => {
