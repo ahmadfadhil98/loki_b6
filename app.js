@@ -183,10 +183,10 @@ app.post("/nilai/ubah_nilai", (req, res) => {
       "Name":"PemWeb",
       "komponen":[
                     "1. Tugas       = 10%",
-                    "3. UTS         = 25%",
-                    "4. UAS         = 40%",
-                    "5. Kuis        = 15%",
-                    "6. Kehadiran   = 10%"
+                    "2. UTS         = 25%",
+                    "3. UAS         = 40%",
+                    "4. Kuis        = 15%",
+                    "5. Kehadiran   = 10%",
        ]
     }
    res.json(obj);
