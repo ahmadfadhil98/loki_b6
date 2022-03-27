@@ -105,6 +105,15 @@ app.get('/ubah_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Mengubah Komponen Penilaian')
 })
 
+// ubah_nilai (POST) (Tes http://localhost:3000/ubah_nilai di Postman)
+app.post("/ubah_nilai", (req, res) => {
+  let obj = {
+    "message": "Mengubah Komponen Nilai",
+    "status": 1
+  }
+  res.json(obj);
+});
+
 // Nomor 17 (Menghapus Komponen Penilaian)
 app.get('/Hapus_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Menghapus Komponen Penilaian')
