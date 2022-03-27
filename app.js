@@ -171,7 +171,7 @@ app.get('/tambah_nilai', function(request, response){
 
 // Bagian Aisyah (nomor 16-19)
 // Nomor 16 (Mengubah Komponen Penilaian)
-app.get('/ubah_nilai', function(request, response){
+app.get('/nilai/ubah_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Mengubah Komponen Penilaian')
 })
 
@@ -195,7 +195,7 @@ app.post("/nilai/ubah_nilai", (req, res) => {
 
 
 // Nomor 17 (Menghapus Komponen Penilaian)
-app.get('/Hapus_nilai', function(request, response){
+app.get('/nilai/hapus_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Menghapus Komponen Penilaian')
 })
 
@@ -216,7 +216,7 @@ app.post("/nilai/hapus_nilai", (req, res) => {
 
 
 // Nomor 18 (Menambah pertemuan mingguan RPS)
-app.get('/tambah_pertemuan', function(request, response){
+app.get('pertemuan/tambah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menambah pertemuan mingguan RPS')
 })
 
@@ -230,7 +230,7 @@ app.post("/pertemuan/tambah_pertemuan", (req, res) => {
 });
 
 // Nomor 19 (Mengubah pertemuan mingguan yang ada dalam RPS.)
-app.get('/mengubah_pertemuan', function(request, response){
+app.get('/pertemuan/mengubah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.')
 })
 
