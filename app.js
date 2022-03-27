@@ -244,44 +244,43 @@ app.post("/nilai/tambah_nilai", (req, res) => {
 
 // Bagian Aisyah (nomor 16-19)
 // Nomor 16 (Mengubah Komponen Penilaian)
-app.get('/ubah_nilai', function(request, response){
+app.get('/nilai/ubah_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Mengubah Komponen Penilaian')
 })
 
-// ubah_nilai (PUT) (Tes http://localhost:3000/nilai/ubah_nilai di Postman)
-app.put("/nilai/ubah_nilai", (req, res) => {
+// ubah_nilai (POST) (Tes http://localhost:3000/nilai/ubah_nilai di Postman)
+app.post("/nilai/ubah_nilai", (req, res) => {
   let obj = {
     "message":"Update Komponen Nilai",
       "id_class":001,
       "Name":"PemWeb",
       "komponen":[
-                    "1. Tugas   = 10%",
-                    "3. UTS     = 25%",
-                    "4. UAS     = 45%",
-                    "5. Kuis    = 15%",
-                    "6. Sikap   = 5%"
+                    "1. Tugas       = 10%",
+                    "2. UTS         = 25%",
+                    "3. UAS         = 40%",
+                    "4. Kuis        = 15%",
+                    "5. Kehadiran   = 10%",
        ]
     }
    res.json(obj);
   });
 
 
-
 // Nomor 17 (Menghapus Komponen Penilaian)
-app.get('/Hapus_nilai', function(request, response){
+app.get('/nilai/hapus_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Menghapus Komponen Penilaian')
 })
 
-// hapus_nilai (DELETE) (Tes http://localhost:3000/nilai/hapus_nilai di Postman)
-app.delete("/nilai/hapus_nilai", (req, res) => {
+// hapus_nilai (POST) (Tes http://localhost:3000/nilai/hapus_nilai di Postman)
+app.post("/nilai/hapus_nilai", (req, res) => {
   let obj = {
      "message":"Delete Data Komponen Nilai",
       "id_class":001,
       "Name":"PemWeb",
       "komponen":[
-                    "1. Tugas   = 25%",
-                    "3. UTS     = 30%",
-                    "4. UAS     = 45%",
+                    "1. Tugas       = 10%",
+                    "2. UTS         = 25%",
+                    "3. UAS         = 40%",
        ]
     }
     res.json(obj);
@@ -289,7 +288,7 @@ app.delete("/nilai/hapus_nilai", (req, res) => {
 
 
 // Nomor 18 (Menambah pertemuan mingguan RPS)
-app.get('/tambah_pertemuan', function(request, response){
+app.get('pertemuan/tambah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menambah pertemuan mingguan RPS')
 })
 
@@ -303,12 +302,12 @@ app.post("/pertemuan/tambah_pertemuan", (req, res) => {
 });
 
 // Nomor 19 (Mengubah pertemuan mingguan yang ada dalam RPS.)
-app.get('/mengubah_pertemuan', function(request, response){
+app.get('/pertemuan/mengubah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.')
 })
 
-// mengubah_pertemuan (PUT) (Tes http://localhost:3000/pertemuan/mengubah_pertemuan di Postman)
-app.put("/pertemuan/mengubah_pertemuan", (req, res) => {
+// mengubah_pertemuan (POST) (Tes http://localhost:3000/pertemuan/mengubah_pertemuan di Postman)
+app.post("/pertemuan/mengubah_pertemuan", (req, res) => {
   let obj = {
     "message": "Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.",
     "status": 1
