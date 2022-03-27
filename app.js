@@ -131,7 +131,17 @@ app.post("/cpmk/tambah_cpmk", (req, res) => {
 app.get('/ubah_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah CPMK Mata Kuliah')
 })
-
+// Ubah CPMK (POST) (Tes http://localhost:3000/cpmk/ubah_cpmk di Postman)
+app.post("/cpmk/ubah_cpmk", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Ubah CPMK",
+	  "Mata Kuliah " : "PBD",
+	  "CPMK " : "Mahasiswa mampu melakukan analisis keperluan untuk menyusun deskripsi basis data. (S9, P2, KU2, KU10, KU11, KK2)"
+	  
+	  }
+	
+	res.json(obj);
+  });
 //Bagian Nadilla (11-15)
 //Nomor 11 (Menghapus CPMK matkul)
 app.get('/hapus_cpmk', function(request, response){
