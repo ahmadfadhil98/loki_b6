@@ -17,6 +17,7 @@ app.get('/about', function(request, response){
 app.get('/login', function(request, response){
 	response.send('Ini adalah halaman Login')
 })
+//komen
 
 // Login (POST) (Tes http://localhost:3000/login di Postman)
 app.post("/login", (req, res) => {
