@@ -52,6 +52,22 @@ app.get('/cetak_laporan', function(request, response){
 app.get('/tambah_rps', function(request, response){
 	response.send('Ini adalah halaman untuk Menambahkan RPS Baru')
 })
+
+// Tambah RPS (POST) (Tes http://localhost:3000/rps/tambah_rps di Postman)
+app.post("/rps/tambah_rps", (req, res) => {
+	let obj = {
+	  "message": "Tambahkan RPS",
+	  "Mata Kuliah " :{
+	  "Nama Mata Kuliah" : "Perancangan Basis Data",
+	  "Kode Mata Kuliah" : "JSI62123",
+	  "SKS" : "4 SKS",
+	  "Semester" : "4",
+	  "Kode Dosen" : "11897"
+	  }
+	}
+	res.json(obj);
+  });
+
 	
 //Nomor 7 (Mengubah RPS)
 app.get('/ubah_rps', function(request, response){
@@ -79,15 +95,6 @@ app.get('/hapus_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk menghapus CPMK Mata Kuliah')
 })
 
-// Hapus CPMK (POST) (Tes http://localhost:3000/hapus_cpmk di Postman)
-app.post("/hapus_cpmk", (req, res) => {
-	let obj = {
-	  "message": "Anda berhasil masuk ke halaman hapus cpmk",
-	  "status": 1
-	}
-	res.json(obj);
-  });
-
 //Nomor 12 (Menambah Referensi)
 app.get('/tambah_referensi', function(request, response){
 	response.send('Ini adalah halaman untuk menambah referensi')
@@ -113,15 +120,6 @@ app.get('/tambah_nilai', function(request, response){
 app.get('/ubah_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Mengubah Komponen Penilaian')
 })
-
-// ubah_nilai (POST) (Tes http://localhost:3000/ubah_nilai di Postman)
-app.post("/ubah_nilai", (req, res) => {
-  let obj = {
-    "message": "Mengubah Komponen Nilai",
-    "status": 1
-  }
-  res.json(obj);
-});
 
 // Nomor 17 (Menghapus Komponen Penilaian)
 app.get('/Hapus_nilai', function(request, response){
