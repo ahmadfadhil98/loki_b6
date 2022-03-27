@@ -136,9 +136,9 @@ app.put("/nilai/ubah_nilai", (req, res) => {
                     "6. Sikap   = 5%"
        ]
     }
-    res.json(del);
-    console.log("Komponen penilaian berhasil update");
+   res.json(obj);
   });
+
 
 
 // Nomor 17 (Menghapus Komponen Penilaian)
@@ -158,9 +158,9 @@ app.delete("/nilai/hapus_nilai", (req, res) => {
                     "4. UAS     = 45%",
        ]
     }
-    res.json(del);
-    console.log("Komponen penilaian berhasil dihapus");
+    res.json(obj);
   });
+
 
 // Nomor 18 (Menambah pertemuan mingguan RPS)
 app.get('/tambah_pertemuan', function(request, response){
