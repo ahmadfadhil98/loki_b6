@@ -6,26 +6,17 @@ const port = 3000
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+//terserah
 
 app.get('/about', function(request, response){
 	response.send('Ini adalah halaman About')
 })
 
 // Bagian Farhan (nomor 1 - 5)
-// Nomor 1. Login (GET)
+// Nomor 1. Login
 app.get('/login', function(request, response){
 	response.send('Ini adalah halaman Login')
 })
-
-// Login (POST) (Tes http://localhost:3000/login di Postman) 
-// Tambahan komen bla bla bal
-app.post("/login", (req, res) => {
-  let obj = {
-    "message": "Anda sudah selesai Login",
-    "status": 0
-  }
-  res.json(obj);
-});
 
 // Nomor 2. Logout
 app.get('/logout', function(request, response){
