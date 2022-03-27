@@ -142,32 +142,105 @@ app.post("/cpmk/ubah_cpmk", (req, res) => {
 	
 	res.json(obj);
   });
+
 //Bagian Nadilla (11-15)
 //Nomor 11 (Menghapus CPMK matkul)
-app.get('/hapus_cpmk', function(request, response){
+app.get('/cpmk/hapus', function(request, response){
 	response.send('Ini adalah halaman untuk menghapus CPMK Mata Kuliah')
 })
 
+//Hapus CPMK (DELETE) (Tes http://localhost:3000/cpmk/hapus di Postman)
+app.delete("/cpmk/hapus", (req, res) => {
+	let obj = {
+	  "message": "Menghapus CPMK",
+	  "Mata Kuliah " : "PBD",
+	  "CPMK " : "Mahasiswa mampu melakukan analisis keperluan untuk menyusun deskripsi basis data. (S9, P2, KU2, KU10, KU11, KK2)",
+	  "cek" : "Sukses",
+	  "status" : 1
+	  
+	  }
+	
+	res.json(obj);
+  });
+
 //Nomor 12 (Menambah Referensi)
-app.get('/tambah_referensi', function(request, response){
+app.get('/referensi/tambah', function(request, response){
 	response.send('Ini adalah halaman untuk menambah referensi')
 })
 
+//Tambah Referensi (POST) (Tes http://localhost:3000/referensi/tambah di Postman)
+app.post("/referensi/tambah", (req, res) => {
+	let obj = {
+	  "message": "Menambahkan Referensi",
+	  "Mata Kuliah " : "PBD",
+	  "Referensi" : "Thomas Connolly and Carolyn Begg, Database Systems: A Practical Approach to Design, Implementation, and Management 6th Ed, Pearson Inc., 2014",
+	  "cek" : "Sukses",
+	  "status" : 1
+	  
+	  }
+	
+	res.json(obj);
+  });
+
 //Nomor 13 (Mengubah Referensi)
-app.get('/ubah_referensi', function(request, response){
+app.get('/referensi/ubah', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah referensi')
 })
 
+//Ubah Referensi (PUT) (Tes http://localhost:3000/referensi/ubah di Postman)
+app.put("/referensi/ubah", (req, res) => {
+	let obj = {
+	  "message": "Mengubah Referensi",
+	  "Mata Kuliah " : "PBD",
+	  "Referensi" : "Thomas Connolly and Carolyn Begg, Database Systems: A Practical Approach to Design, Implementation, and Management 6th Ed, Pearson Inc., 2014",
+	  "cek" : "Sukses",
+	  "status" : 1
+	  
+	  }
+	
+	res.json(obj);
+  });
+
 //Nomor 14 (Menghapus Referensi)
-app.get('/hapus_referensi', function(request, response){
+app.get('/referensi/hapus', function(request, response){
 	response.send('Ini adalah halaman untuk menghapus referensi')
 })
 
+//Hapus Referensi (DELETE) (Tes http://localhost:3000/referensi/hapus di Postman)
+app.delete("/referensi/ubah", (req, res) => {
+	let obj = {
+	  "message": "Menghapus Referensi",
+	  "Mata Kuliah " : "PBD",
+	  "Referensi" : "Thomas Connolly and Carolyn Begg, Database Systems: A Practical Approach to Design, Implementation, and Management 6th Ed, Pearson Inc., 2014",
+	  "cek" : "Sukses",
+	  "status" : 1
+	  
+	  }
+	
+	res.json(obj);
+  });
+
 //Nomor 15 (Menambah Komponen Penilaian)
-app.get('/tambah_nilai', function(request, response){
+app.get('/nilai/tambah_nilai', function(request, response){
 	response.send('Ini adalah halaman untuk menambah komponen penilaian')
 })
 
+// Tambah Nilai (POST) (Tes http://localhost:3000/nilai/tambah_nilai di Postman)
+app.post("/nilai/tambah_nilai", (req, res) => {
+	let obj = {
+	  "message":"Menambah Komponen Nilai",
+		"id_class":001,
+		"Name":"PemWeb",
+		"komponen":[
+					  "1. Tugas   = 10%",
+					  "3. UTS     = 25%",
+					  "4. UAS     = 45%",
+					  "5. Kuis    = 15%",
+					  "6. Sikap   = 5%"
+		 ]
+	  }
+	 res.json(obj);
+	});
 
 // Bagian Aisyah (nomor 16-19)
 // Nomor 16 (Mengubah Komponen Penilaian)
