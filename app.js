@@ -18,6 +18,15 @@ app.get('/login', function(request, response){
 	response.send('Ini adalah halaman Login')
 })
 
+// Login (POST) (Tes http://localhost:3000/login di Postman)
+app.post("/login", (req, res) => {
+  let obj = {
+    "message": "Anda berhasil Login",
+    "status": 1
+  }
+  res.json(obj);
+});
+
 // Nomor 2. Logout
 app.get('/logout', function(request, response){
 	response.send('Ini adalah halaman Logout')
