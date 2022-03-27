@@ -122,7 +122,7 @@ app.get('/ubah_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Mengubah Komponen Penilaian')
 })
 
-// ubah_nilai (PUT) (Tes http://localhost:3000/ubah_nilai di Postman)
+// ubah_nilai (PUT) (Tes http://localhost:3000/nilai/ubah_nilai di Postman)
 app.put("/nilai/ubah_nilai", (req, res) => {
   let obj = {
     "message":"Update Komponen Nilai",
@@ -146,7 +146,7 @@ app.get('/Hapus_nilai', function(request, response){
 	response.send('Ini adalah halaman Dosen Menghapus Komponen Penilaian')
 })
 
-// hapus_nilai (DELETE) (Tes http://localhost:3000/hapus_nilai di Postman)
+// hapus_nilai (DELETE) (Tes http://localhost:3000/nilai/hapus_nilai di Postman)
 app.delete("/nilai/hapus_nilai", (req, res) => {
   let obj = {
      "message":"Delete Data Komponen Nilai",
@@ -167,7 +167,7 @@ app.get('/tambah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menambah pertemuan mingguan RPS')
 })
 
-// tambah_pertemuan (POST) (Tes http://localhost:3000/tambah_pertemuan di Postman)
+// tambah_pertemuan (POST) (Tes http://localhost:3000/pertemuan/tambah_pertemuan di Postman)
 app.post("/pertemuan/tambah_pertemuan", (req, res) => {
   let obj = {
     "message": "Ini adalah halaman Dosen menambah pertemuan mingguan RPS",
@@ -181,7 +181,7 @@ app.get('/mengubah_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.')
 })
 
-// mengubah_pertemuan (PUT) (Tes http://localhost:3000/mengubah_pertemuan di Postman)
+// mengubah_pertemuan (PUT) (Tes http://localhost:3000/pertemuan/mengubah_pertemuan di Postman)
 app.put("/pertemuan/mengubah_pertemuan", (req, res) => {
   let obj = {
     "message": "Ini adalah halaman Dosen mengubah pertemuan mingguan yang ada dalam RPS.",
