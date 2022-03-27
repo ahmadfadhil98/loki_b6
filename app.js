@@ -49,7 +49,7 @@ app.get('/cetak_laporan', function(request, response){
 
 //Bagian Ulfa (6-10)
 //Nomor 6 (Fitur Tambah RPS)
-app.get('/tambah_rps', function(request, response){
+app.get('/rps/tambah_rps', function(request, response){
 	response.send('Ini adalah halaman untuk Menambahkan RPS Baru')
 })
 
@@ -70,25 +70,78 @@ app.post("/rps/tambah_rps", (req, res) => {
 
 	
 //Nomor 7 (Mengubah RPS)
-app.get('/ubah_rps', function(request, response){
+app.get('/rps/ubah_rps', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah RPS')
 })
+// Ubah RPS (POST) (Tes http://localhost:3000/rps/ubah_rps di Postman)
+app.post("/ubah/tambah_rps", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Ubah RPS",
+	  "Mata Kuliah " :{
+	  "Nama Mata Kuliah" : "",
+	  "Kode Mata Kuliah" : "",
+	  "SKS" : "",
+	  "Semester" : "",
+	  "Kode Dosen" : ""
+	  }
+	}
+	res.json(obj);
+  });
 
 //Nomor 8 (Revisi RPS Lama)
-app.get('/revisi_rps', function(request, response){
+app.get('/rps/revisi_rps', function(request, response){
 	response.send('Ini adalah halaman untuk Revisi RPS lama ke RPS Versi berikutnya')
 })
+// Revisi RPS (POST) (Tes http://localhost:3000/rps/revisi_rps di Postman)
+app.post("/rps/revisi_rps", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Revisi RPS",
+	  "Mata Kuliah " :{
+	  "Nama Mata Kuliah" : "",
+	  "Kode Mata Kuliah" : "",
+	  "SKS" : "",
+	  "Semester" : "",
+	  "Kode Dosen" : ""
+	  }
+	}
+	res.json(obj);
+  });
 	
 //Nomor 9 (Menambah CPMK Matkul)
-app.get('/tambah_cpmk', function(request, response){
+app.get('/cpmk/tambah_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk menambahkan CPMK Mata Kuliah')
 })
+
+// Tambah CPMK (POST) (Tes http://localhost:3000/cpmk/tambah_cpmk di Postman)
+app.post("/cpmk/tambah_cpmk", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Tambah CPMK",
+	  "Mata Kuliah " : "PBD",
+	  "CPMK " : "Mahasiswa memahami konsep dasar basis data"
+	  
+	  }
+	
+	res.json(obj);
+  });
+
+
+
 	
 //Nomor 10 (Mengubah CPMK matkul)
 app.get('/ubah_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah CPMK Mata Kuliah')
 })
-
+// Ubah CPMK (POST) (Tes http://localhost:3000/cpmk/ubah_cpmk di Postman)
+app.post("/cpmk/ubah_cpmk", (req, res) => {
+	let obj = {
+	  "message": "Silahkan Ubah CPMK",
+	  "Mata Kuliah " : "PBD",
+	  "CPMK " : "Mahasiswa mampu melakukan analisis keperluan untuk menyusun deskripsi basis data. (S9, P2, KU2, KU10, KU11, KK2)"
+	  
+	  }
+	
+	res.json(obj);
+  });
 //Bagian Nadilla (11-15)
 //Nomor 11 (Menghapus CPMK matkul)
 app.get('/hapus_cpmk', function(request, response){
