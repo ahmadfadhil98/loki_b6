@@ -254,12 +254,12 @@ app.put("/referensi/ubah", (req, res) => {
   });
 
 //Nomor 14 (Menghapus Referensi)
-app.get('/referensi/ubah', function(request, response){
+app.get('/referensi/hapus', function(request, response){
 	response.send('Ini adalah halaman untuk menghapus referensi')
 })
 
 //Hapus Referensi (DELETE) (Tes http://localhost:3000/referensi/hapus di Postman)
-app.delete("/referensi/ubah", (req, res) => {
+app.delete("/referensi/hapus", (req, res) => {
 	let obj = {
 	  "message": "Menghapus Referensi",
 	  "Mata Kuliah " : "PBD",
