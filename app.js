@@ -21,6 +21,8 @@ app.get('/login', function(request, response){
 // Login (POST) (Tes http://localhost:3000/login di Postman)
 app.post("/login", (req, res) => {
   let obj = {
+    "Username": "admin",
+    "Password": "****",
     "message": "Anda berhasil Login",
     "status": 1
   }
@@ -32,20 +34,70 @@ app.get('/logout', function(request, response){
 	response.send('Ini adalah halaman Logout')
 })
 
+// Logout (POST) (Tes http://localhost:3000/logout di Postman)
+app.post("/logout", (req, res) => {
+  let obj = {
+    "message": "Anda berhasil Logout",
+    "status": 0
+  }
+  res.json(obj);
+});
+
 // Nomor 3. Menentukan dosen yang akan membuat/memperbaharui RPS
-app.get('/pilih_dosen', function(request, response){
+app.get('/rps/pilih_dosen', function(request, response){
 	response.send('Ini adalah halaman untuk menentukan dosen yang akan membuat/memperbaharui RPS')
 })
 
+// Menentukan dosen (POST) (Tes http://localhost:3000/pilih_dosen di Postman)
+app.post("/rps/pilih_dosen", (req, res) => {
+  let obj = {
+    "message": "Tentukan dosen yang akan membuat/memperbaharui RPS",
+    "Nama Dosen": "NAMA DOSEN",
+    "Kode Dosen": "11897"
+  }
+  res.json(obj);
+});
+
 // Nomor 4. Lihat laporan RPS
-app.get('/laporan_rps', function(request, response){
+app.get('/rps/laporan_rps', function(request, response){
 	response.send('Ini adalah halaman untuk melihat laporan RPS yang ada')
 })
 
+// Lihat laporan RPS (POST) (Tes http://localhost:3000/rps/laporan_rps di Postman)
+app.post("/rps/laporan_rps", (req, res) => {
+  let obj = {
+    "message": "Laporan RPS",
+    "Mata Kuliah " :{
+	  "Nama Mata Kuliah" : "Perancangan Basis Data",
+	  "Kode Mata Kuliah" : "JSI62123",
+	  "SKS" : "4 SKS",
+	  "Semester" : "4",
+	  "Kode Dosen" : "11897"
+    }
+  }
+  res.json(obj);
+});
+
 // Nomor 5. Cetak RPS
-app.get('/cetak_laporan', function(request, response){
+app.get('/rps/cetak_rps', function(request, response){
 	response.send('Ini adalah halaman untuk mencetak laporan RPS')
 })
+
+// Cetak RPS (POST) (Tes http://localhost:3000/rps/cetak_rps di Postman)
+app.post("/rps/cetak_rps", (req, res) => {
+  let obj = {
+    "message": "Laporan RPS",
+    "Mata Kuliah " :{
+	  "Nama Mata Kuliah" : "Perancangan Basis Data",
+	  "Kode Mata Kuliah" : "JSI62123",
+	  "SKS" : "4 SKS",
+	  "Semester" : "4",
+	  "Kode Dosen" : "11897",
+    },
+    "Tombol cetak RPS": "CETAK"
+  }
+  res.json(obj);
+});
 
 //Bagian Ulfa (6-10)
 //Nomor 6 (Fitur Tambah RPS)
@@ -74,7 +126,7 @@ app.get('/rps/ubah_rps', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah RPS')
 })
 // Ubah RPS (POST) (Tes http://localhost:3000/rps/ubah_rps di Postman)
-app.post("/ubah/tambah_rps", (req, res) => {
+app.post("/rps/ubah_rps", (req, res) => {
 	let obj = {
 	  "message": "Silahkan Ubah RPS",
 	  "Mata Kuliah " :{
@@ -128,7 +180,7 @@ app.post("/cpmk/tambah_cpmk", (req, res) => {
 
 	
 //Nomor 10 (Mengubah CPMK matkul)
-app.get('/ubah_cpmk', function(request, response){
+app.get('/cpmk/ubah_cpmk', function(request, response){
 	response.send('Ini adalah halaman untuk mengubah CPMK Mata Kuliah')
 })
 // Ubah CPMK (POST) (Tes http://localhost:3000/cpmk/ubah_cpmk di Postman)
@@ -202,7 +254,7 @@ app.put("/referensi/ubah", (req, res) => {
   });
 
 //Nomor 14 (Menghapus Referensi)
-app.get('/referensi/hapus', function(request, response){
+app.get('/referensi/ubah', function(request, response){
 	response.send('Ini adalah halaman untuk menghapus referensi')
 })
 
@@ -317,7 +369,7 @@ app.post("/pertemuan/mengubah_pertemuan", (req, res) => {
 
 // Bagian Faradila (Nomor 20-23)
 // Nomor 20. Menghapus pertemuan mingguan yang ada dalam RPS)
-app.get('/hapus_pertemuan', function(request, response){
+app.get('/RPS/hapus_pertemuan', function(request, response){
 	response.send('Ini adalah halaman Dosen menghapus pertemuan mingguan yang ada dalam RPS')
 })
 // hapus_pertemuan (DELETE) (Tes http://localhost:3000/RPS/hapus_Pertemuan di Postman)
