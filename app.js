@@ -420,7 +420,7 @@ app.get("/RPS/lihat_detail", (req, res) => {
   });
 
 // Nomor 23. Mengeksport RPS matakuliah menjadi PDF)
-app.get('/eksport_RPS', function(request, response){
+app.get('/eksport_PDF', function(request, response){
 	response.send('Ini adalah halaman Pengguna mengeksport RPS matakuliah menjadi PDF')
 })
 // eksport_PDF (GET) (Tes http://localhost:3000/RPS/eksport_PDF di Postman)
