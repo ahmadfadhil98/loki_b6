@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const database = require('./database');
+const databaseRouter = require('./database');
 
 const port = 3000
 
@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-// Route database (http://localhost:3000/database)
-app.use("", database);
+// Router database (http://localhost:3000/database)
+app.use("/", databaseRouter);
 
 // Bagian Farhan (nomor 1 - 5)
 // Nomor 1. Login
