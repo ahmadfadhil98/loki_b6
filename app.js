@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-// Route database
+// Route database (http://localhost:3000/database)
 app.use("", database);
 
 // Bagian Farhan (nomor 1 - 5)
