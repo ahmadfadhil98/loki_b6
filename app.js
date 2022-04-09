@@ -1,16 +1,17 @@
 const express = require('express')
 const app = express()
+
+const database = require('./database');
+
 const port = 3000
 
 // Bagian test
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-//terserah
 
-app.get('/about', function(request, response){
-	response.send('Ini adalah halaman About')
-})
+// Route database
+app.use("", database);
 
 // Bagian Farhan (nomor 1 - 5)
 // Nomor 1. Login
