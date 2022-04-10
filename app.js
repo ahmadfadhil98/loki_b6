@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const databaseRouter = require('./database');
+const databaseRouter = require('./models/database');
 
 const port = 3000
 
