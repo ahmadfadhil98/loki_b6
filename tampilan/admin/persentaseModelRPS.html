@@ -75,6 +75,47 @@
           <i class='bx bx-chevron-down' ></i>
         </div>
       </nav>
+
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div style="margin-left:75px;"class="right-side">
+            <div class="box-topic">Persentase Model RPS</div>
+            <div class="indicator">
+              <span class="text">
+                  <p>Pemograman Web : </p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:0px 100px ;">
+          <div id="piechart">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              // Load google charts
+              google.charts.load('current', {'packages':['corechart']});
+              google.charts.setOnLoadCallback(drawChart);
+              
+              // Draw the chart and set the chart values
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                ['Metode', 'Jumlah'],
+                ['Presentasi Dosen dan Diskusi', 2],
+                ['Project Based Learning', 10],
+                ['Collaborative Learning', 3]
+              ]);
+              
+                // Optional; add a title and set the width and height of the chart
+                var options = {'title':'Persentase Model RPS (Pemograman Web)', 'width':550, 'height':400};
+              
+                // Display the chart inside the <div> element with id="piechart"
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                chart.draw(data, options);
+              }
+              </script>
+          </div>
+        </div>
+      </div>
     </section>
     
     <script>
