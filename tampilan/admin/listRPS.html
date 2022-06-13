@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <div class="sidebar">
+    <div class="sidebar no-print">
       <div class="logo-details">
         <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png" 
           alt="Unand" width="35" height="35" style="margin:0px 12.5px">
@@ -48,7 +48,7 @@
     </div>
 
     <section class="home-section">
-      <nav>
+      <nav class="no-print">
         <div class="sidebar-button">
           <i class='bx bx-menu sidebarBtn'></i>
           <span class="dashboard">List RPS dan Jumlah Revisi</span>
@@ -81,7 +81,7 @@
                 <th scope="col">Mata Kuliah</th>
                 <th scope="col">SKS</th>
                 <th scope="col">Jumlah Revisi</th>
-                <th scope="col">Aksi</th>
+                <th scope="col" class="no-print">Aksi</th>
               </tr>
             </thead>
             <tbody>
@@ -91,7 +91,7 @@
                 <td>Pemograman Web</td>
                 <td>3</td>
                 <td>00</td>
-                <td>
+                <td class="no-print">
                   <a href="Pemograman_Web/dosenPengampu.html">
                     <button style="margin-right: 5px;" type="button" class="btn btn-primary">
                       <i class='bx bx-user' ></i>
@@ -112,7 +112,7 @@
             </tbody>
           </table>
 
-          <button onClick="window.print()" type="button" class="btn btn-primary">
+          <button onClick="window.print()" type="button" class="btn btn-primary no-print">
             <i class="bi bi-printer"></i>
             Cetak
           </button>
