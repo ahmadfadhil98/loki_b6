@@ -25,7 +25,7 @@
         <span class="logo_name">Manajemen RPS</span>
       </div>
       
-      <ul class="nav-links">
+      <div class="nav-links">
         <li>
           <a href="dashboardAdmin.html">
             <i class='bx bx-grid-alt' ></i>
@@ -74,7 +74,7 @@
             <span class="links_name">Log out</span>
           </a>
         </li>
-      </ul>
+      </div>
     </div>
 
     <section class="home-section">
@@ -92,55 +92,54 @@
       
       <div class="home-content">
         <div class="overview-boxes">
-            <div style="margin-left:75px;"class="right-side">
-              <div class="box-topic">List RPS</div>
-              <div class="indicator">
-                <span class="text">
-                    <p>List RPS dan jumlah revisinya : </p>
-                </span>
-              </div>
+          <div style="margin-left:75px;"class="right-side">
+            <div class="box-topic">List RPS</div>
+            <div class="indicator">
+              <span class="text">
+                  <p>List RPS dan jumlah revisinya : </p>
+              </span>
             </div>
           </div>
-          <div style="margin:0px 100px ;">
-               <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Kode Matkul</th>
-                    <th scope="col">Mata Kuliah</th>
-                    <th scope="col">SKS</th>
-                    <th scope="col">Jumlah Pertemuan</th>
-                    <th scope="col">Jumlah Revisi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>JSI62165</td>
-                    <td>Pemograman Web</td>
-                    <td>3</td>
-                    <td>14</td>
-                    <td>00</td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>JSI621656</td>
-                    <td>Rekayasa Perangkat Lunak</td>
-                    <td>2</td>
-                    <td>13</td>
-                    <td>01</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div tyle="float:right">
-                <button onClick="window.print()" type="button" class="btn btn-primary">
-                  <i class="bi bi-printer"> Cetak</i>
-                </button>
-              </div>
-          </div>
         </div>
+
+        <div style="margin:0px 100px ;">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Kode Matkul</th>
+                <th scope="col">Mata Kuliah</th>
+                <th scope="col">SKS</th>
+                <th scope="col">Jumlah Pertemuan</th>
+                <th scope="col">Jumlah Revisi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>JSI62165</td>
+                <td>Pemograman Web</td>
+                <td>3</td>
+                <td>14</td>
+                <td>00</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>JSI621656</td>
+                <td>Rekayasa Perangkat Lunak</td>
+                <td>2</td>
+                <td>13</td>
+                <td>01</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button onClick="window.print()" type="button" class="btn btn-primary">
+            <i class="bi bi-printer"> Cetak</i>
+          </button>
+        </div>
+      </div>
     </section>
     
     <script>
@@ -155,22 +154,5 @@
           sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
       }
     </script>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-          <div class="modal-body">
-              <h5>RPS berhasil dihapus</h5>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-          </div>
-      </div>
-    </div>
   </body>
 </html>
