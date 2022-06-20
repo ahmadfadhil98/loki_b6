@@ -81,7 +81,15 @@
       <div class="home-content">
         <div class="overview-boxes">
           <div class="right-side">
-            <div class="box-topic">Metode RPS</div>
+            <div class="box-topic">
+              Metode RPS
+              <div class="btn">
+                <button onClick="window.print()" type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                  <i class="bi bi-printer"></i>
+                  Cetak
+                </button>
+              </div>
+            </div>
             <div class="indicator">
               <span class="text">
                   <p>Persentase Metode RPS yang digunakan : </p>
@@ -91,6 +99,7 @@
         </div>
 
         <div style="margin:0px 20px ;">
+          <!--Kode Grafik metode RPS-->
           <div id="piechart">
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
@@ -109,19 +118,31 @@
               ]);
               
                 // Optional; add a title and set the width and height of the chart
-                var options = {'title':'RPS Rekayasa Perangkat Lunak (WIP)', 'width':550, 'height':400};
+                var options = {
+                  'title': 'RPS Rekayasa Perangkat Lunak (WIP)', 
+                  'titleTextStyle': {
+                    'fontSize': 22
+                  },
+                  'legendTextStyle': {
+                    'fontSize': 15
+                  },
+                  'pieSliceTextStyle': {
+                    'fontSize': 20
+                  },
+                  'width': 600, 
+                  'height': 400,
+                  'chartArea': {
+                    'width': '80%', 
+                    'height': '80%'
+                  }
+                };
               
                 // Display the chart inside the <div> element with id="piechart"
                 var chart = new google.visualization.PieChart(document.getElementById('piechart'));
                 chart.draw(data, options);
               }
-              </script>
+            </script>
           </div>
-
-          <button onClick="window.print()" type="button" class="btn btn-primary no-print">
-            <i class="bi bi-printer"></i>
-            Cetak
-          </button>
         </div>
       </div>
     </section>
