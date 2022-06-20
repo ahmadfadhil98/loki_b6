@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <div class="sidebar no-print">
+    <div class="sidebar">
       <div class="logo-details">
         <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png" 
           alt="Unand" width="35" height="35" style="margin:0px 12.5px">
@@ -48,10 +48,10 @@
     </div>
 
     <section class="home-section">
-      <nav class="no-print">
+      <nav>
         <div class="sidebar-button">
           <i class='bx bx-menu sidebarBtn'></i>
-          <span class="dashboard">List RPS dan Jumlah Revisi</span>
+          <span class="dashboard">List RPS</span>
         </div>
         <div class="profile-details">
           <!--<img src="images/profile.jpg" alt="">-->
@@ -63,10 +63,10 @@
       <div class="home-content">
         <div class="overview-boxes">
           <div class="right-side">
-            <div class="box-topic">List RPS</div>
+            <div class="box-topic">List RPS dan Jumlah Revisi</div>
             <div class="indicator">
               <span class="text">
-                  <p>List RPS dan jumlah revisinya : </p>
+                  <p>List RPS yang ada : </p>
               </span>
             </div>
           </div>
@@ -109,10 +109,35 @@
                     </button></a>
                 </td>
               </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>JSI62130</td>
+                <td>Rekayasa Perangkat Lunak</td>
+                <td>2</td>
+                <td>00</td>
+                <td class="no-print">
+                  <a href="Rekayasa_Perangkat_Lunak/dosenPengampu.html">
+                    <button style="margin-right: 5px;" type="button" class="btn btn-primary">
+                      <i class='bx bx-user' ></i>
+                      Dosen
+                    </button></a>
+                  <a href="Rekayasa_Perangkat_Lunak/petaCPL-CPMK.html">
+                    <button style="margin-right: 5px;" type="button" class="btn btn-primary">
+                      <i class='bx bx-coin-stack' ></i>
+                      CPL-CPMK
+                    </button></a>
+                  <a href="Rekayasa_Perangkat_Lunak/metodeRPS.html">
+                    <button style="margin-right: 5px;" type="button" class="btn btn-primary">
+                      <i class='bx bx-pie-chart-alt-2' ></i>
+                      Metode
+                    </button></a>
+                </td>
+              </tr>
             </tbody>
           </table>
 
-          <button onClick="window.print()" type="button" class="btn btn-primary no-print">
+          <button onClick="window.print()" type="button" class="btn btn-primary">
             <i class="bi bi-printer"></i>
             Cetak
           </button>

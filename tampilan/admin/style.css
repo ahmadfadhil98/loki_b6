@@ -438,10 +438,18 @@ nav .profile-details i{
     width: calc(100% - 60px);
   }
 }
-@media print
-{    
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
+@media print {
+  .no-print,
+  .btn,
+  .sidebar, 
+  .home-section nav {
+    display: none !important;
+  }
+  .home-section {
+    left: 0px !important;
+    width: 100% !important;
+  }
+  .home-content {
+    padding-top: 0px !important;
+  }
 }
