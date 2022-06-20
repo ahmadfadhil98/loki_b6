@@ -7,6 +7,7 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -106,18 +107,13 @@
                 <td>199108122019032018</td>
                 <td>
                   <a href="editDosenPengampu.html">
-                    <button style="margin-right: 5px;" type="button" class="btn btn-primary">
-                      <svg style="margin-right:3px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                      </svg>
+                    <button style="margin-right: 5px;" type="button" class="btn btn-warning">
+                      <i class="bi bi-pencil-square"></i>
                       Edit
                     </button></a>
 
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLong">
-                      <svg style="margin-right:3px"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-                      </svg>
+                      <i class="bi bi-trash-fill"></i>
                       Hapus
                     </button>
                 </td>
@@ -144,8 +140,9 @@
         if(sidebar.classList.contains("active")) {
           sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
         }
-        else
+        else {
           sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
       }
     </script>
     
@@ -160,7 +157,7 @@
                 <h5>Hapus Dosen Pengampu ini?</h5>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Batal</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
               <button type="button" href="#" class="btn btn-danger">Hapus</button>
             </div>
           </div>
