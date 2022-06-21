@@ -27,7 +27,7 @@
       
       <div class="nav-links">
         <li>
-          <a href="../dashboardAdmin.html">
+          <a href="../dashboardMahasiswa.html">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -39,27 +39,9 @@
           </a>
         </li>
         <li>
-          <a href="dosenPengampu.html">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Dosen Pengampu</span>
-          </a>
-        </li>
-        <li>
-          <a href="petaCPL-CPMK.html" class="active">
-            <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Peta CPL ke CPMK</span>
-          </a>
-        </li>
-        <li>
-          <a href="metodeRPS.html">
-            <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Metode RPS</span>
-          </a>
-        </li>
-        <li class="log_out">
-          <a href="#">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Log out</span>
+          <a href="detailRPS.html" class="active">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Detail RPS</span>
           </a>
         </li>
       </div>
@@ -73,32 +55,36 @@
         </div>
         <div class="profile-details">
           <!--<img src="images/profile.jpg" alt="">-->
-          <span class="admin_name">Admin</span>
+          <span class="admin_name">Mahasiswa</span>
           <i class='bx bx-chevron-down' ></i>
         </div>
       </nav>
 
       <div class="home-content">
+        <div class="btn">
+          <button onClick="window.print()" type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+            <i class="bi bi-printer"></i>
+            Cetak
+          </button>
+        </div>
         <div class="overview-boxes">
           <div class="right-side">
             <div class="box-topic">
-              Peta CPL dan CPMK 
-              <div class="btn">
-                <button onClick="window.print()" type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
-                  <i class="bi bi-printer"></i>
-                  Cetak
-                </button>
-              </div>
+              Deskripsi Mata Kuliah 
             </div>
             <div class="indicator">
               <span class="text">
-                  <p>CPL dan CPMK Mata Kuliah : </p>
+                  <p>Mata kuliah pemrograman web merupakan mata kuliah yang membahas tentang teknik pengembangan website dari hulu ke hilir, 
+                    yaitu mulai dari algoritma dalam pemrograman web, pembuatan website (front-end dan back-end), hosting, hingga dokumentasi 
+                    dan hukum kekayaan intelektual dari program yang dihasilkan nantinya.
+                  </p>
               </span>
             </div>
           </div>
         </div>
 
         <div style="margin:0px 20px ;">
+          <h5>Peta CPL ke CPMK</h5>
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -165,6 +151,119 @@
               <tr>
                 <th scope="row">7</th>
                 <td>Mahasiswa mampu mendemonstrasikan keterampilan bekerja sama dengan tim. (CP-3)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin:0px 20px ;">
+          <h5>Referensi Utama</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Referensi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Matt Doyle, 2009, “Beginning PHP 5.3”, Wrox</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Nicholas Zakas, 2012, “Professional Javascript for Web Developer”, John Wiley & Sons</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5>Referensi Pendukung</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Referensi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark Pilgrim, 2010, “HTML5 Up and Running”, O’Reilly</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Steve Fulton; Jeff Fulton, 2011, “HTML5 Canvas”, O’Reilly</td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>S. Stefanor, 2010, “Javascript Patterns”, O’Reilly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin:0px 20px ;">
+          <h5>Komponen Penilaian</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Penilaian</th>
+                <th scope="col">Bobot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Kehadiran</td>
+                <td>10%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Tugas</td>
+                <td>10%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>Kuis</td>
+                <td>15%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>UTS</td>
+                <td>25%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">5</th>
+                <td>UAS</td>
+                <td>40%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin:0px 20px ;">
+          <h5>Pertemuan Mingguan</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Penilaian</th>
+                <th scope="col">Bobot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>a</td>
+                <td>a</td>
               </tr>
             </tbody>
           </table>
