@@ -74,6 +74,11 @@
       border: none;
       background: #5578ac;
     }
+    
+    #backlogin .wed:hover{
+      background-color :#3e5b85 ;
+
+    }
   </style>
 
   <body>
@@ -81,11 +86,12 @@
       <div id="backlogin">
         <h1>Login</h1>
         <hr>
-        <form action= "dosen/dashboardDosen.html" method="POST"> 
+        <form method="POST"> 
           <input type="text" class="inputa" name="username" value="" placeholder="Masukan Username">
           <input type="password" class="inputa" name="password" value="" placeholder="Masukan password"> 
-          <input  type="submit" class="wed" name="" value="LOGIN"> <input type="reset" class="wed" name="" value="RESET"> 
         </form>
+        <a href="dosen/dashboardDosen.html">
+        <button type="button" class="wed" name="">DOSEN </button></a> <a href="admin/dashboardAdmin.html"><button type="button" class="wed" name="">ADMIN</button></a> 
       </div>
     </center>
   </body>
