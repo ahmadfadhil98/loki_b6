@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png" 
+          alt="Unand" width="35" height="35" style="margin:0px 12.5px">
+        <span class="logo_name">Manajemen RPS</span>
+      </div>
+      
+      <div class="nav-links">
+        <li>
+          <a href="dashboardDosen.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="listRPS.html" class="active">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">List RPS</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </div>
+    </div>
+
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class='bx bx-menu sidebarBtn'></i>
+          <span class="dashboard">List RPS</span>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile.jpg" alt="">-->
+          <span class="admin_name">Husnil Kamil</span>
+          <i class='bx bx-chevron-down' ></i>
+        </div>
+      </nav>
+      
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="right-side">
+            <div class="box-topic">
+              List RPS yang diampu:
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:0px 20px ;">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Kode Matkul</th>
+                <th scope="col">Mata Kuliah</th>
+                <th scope="col">SKS</th>
+                <th scope="col">Jumlah Revisi</th>
+                <th scope="col" class="no-print">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>JSI62165</td>
+                <td>Pemrograman Web</td>
+                <td>3</td>
+                <td>00</td>
+                <td class="no-print">
+                  <a href="Pemrograman_Web/DetailRPS.html">
+                    <button style="margin-right: 5px;" type="button" class="btn btn-success">
+                      <i class='bx bx-box' ></i>
+                      Detail
+                    </button></a>
+                  <a href="Pemrograman_Web/editRPS.html">
+                    <button style="margin-right: 5px;" type="button" class="btn btn-warning">
+                      <i class='bi bi-pencil-square' ></i>
+                      Edit
+                    </button></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a href="tambahRPS.html">
+            <button style="margin-right: 5px;" type="button" class="btn btn-primary">
+              <i class="bi bi-plus"></i>
+              Tambah
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function() {
+        sidebar.classList.toggle("active");
+        if(sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+        }
+        else {
+          sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+      }
+    </script>
+  </body>
+</html>

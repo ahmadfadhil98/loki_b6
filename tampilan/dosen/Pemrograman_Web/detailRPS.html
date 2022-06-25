@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png" 
+          alt="Unand" width="35" height="35" style="margin:0px 12.5px">
+        <span class="logo_name">Manajemen RPS</span>
+      </div>
+      
+      <div class="nav-links">
+        <li>
+          <a href="../dashboardDosen.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../listRPS.html">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">List RPS</span>
+          </a>
+        </li>
+        <li>
+          <a href="detailRPS.html" class="active">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Detail RPS</span>
+          </a>
+        </li>
+      </div>
+    </div>
+
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class='bx bx-menu sidebarBtn'></i>
+          <span class="dashboard">Pemrograman Web (JSI62165) (WIP)</span>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile.jpg" alt="">-->
+          <span class="admin_name">Husnil Kamil</span>
+          <i class='bx bx-chevron-down' ></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <div style="margin:0px 20px ;">
+          <h5>Nama Mata Kuliah: Pemrograman Web</h5>
+          <h5>Kode Mata Kuliah: JSI62165</h5>
+          <h5>Dosen Pengampu: Husnil Kamil</h5>
+          <h5>Semester: 4</h5>
+          <h5>Bobot SKS: 3</h5>
+        </div>
+        &nbsp;
+
+        <div style="margin:0px 20px ;">
+          <h5>Deskripsi Mata Kuliah</h5>
+          <p>
+            Mata kuliah pemrograman web merupakan mata kuliah yang membahas tentang teknik pengembangan website dari hulu ke hilir, 
+            yaitu mulai dari algoritma dalam pemrograman web, pembuatan website (front-end dan back-end), hosting, hingga dokumentasi 
+            dan hukum kekayaan intelektual dari program yang dihasilkan nantinya.
+          </p>
+        </div>
+        &nbsp;
+
+        <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="Pemrograman_Web/editCPMK.html">
+              <button type="button" class="btn btn-warning no-print" style="position: absolute; right: 145px;">
+                <i class="bi bi-pencil-square"></i>
+                Edit
+              </button>
+            </a>
+            <a href="Pemrograman_Web/tambahCPMK.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                <i class="bi bi-plus"></i>
+                Tambah
+              </button>
+            </a>
+          </div>
+
+          <h5>Peta CPL ke CPMK</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">CP Program Studi</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">CP-1</th>
+                <td>Mengidentifikasi, memformulasikan dan memecahkan permasalahan kebutuhan informasi dari suatu organisasi.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">CP-2</th>
+                <td>Mengintegrasikan solusi berbasis teknologi informasi secara efektif pada suatu organisasi.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">CP-3</th>
+                <td>Menerapkan konsep-konsep dasar dalam merencanakan Sistem Informasi, merancang Sistem Informasi, membangun Sistem Informasi, mengoperasikan Sistem Informasi, dan mengevaluasi Sistem Informasi.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">CP Mata Kuliah</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mahasiswa mampu menjelaskan konsep dasar dan komponen aplikasi berbasis web. (CP-1, CP-2)</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Mahasiswa mampu menggunakan salah satu technology stack untuk membangun aplikasi berbasis web. (CP-1, CP-2)</td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>Mahasiswa mampu menggunakan pemrograman asynchronous. (CP-2, CP-3)</td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>Mahasiswa mampu menerapkan keamanan untuk situs web. (CP-2, CP-3)</td>
+              </tr>
+
+              <tr>
+                <th scope="row">5</th>
+                <td>Mahasiswa mampu menggunakan dan mendesain format data JSON. (CP-2, CP-3)</td>
+              </tr>
+
+              <tr>
+                <th scope="row">6</th>
+                <td>Mahasiswa mampu deploy aplikasi web ke internet. (CP-2)</td>
+              </tr>
+
+              <tr>
+                <th scope="row">7</th>
+                <td>Mahasiswa mampu mendemonstrasikan keterampilan bekerja sama dengan tim. (CP-3)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        &nbsp;
+
+        <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="Pemrograman_Web/editReferensi.html">
+              <button type="button" class="btn btn-warning no-print" style="position: absolute; right: 145px;">
+                <i class="bi bi-pencil-square"></i>
+                Edit
+              </button>
+            </a>
+            <a href="Pemrograman_Web/tambahReferensi.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                <i class="bi bi-plus"></i>
+                Tambah
+              </button>
+            </a>
+          </div>
+
+          <h5>Referensi Utama</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Referensi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Matt Doyle, 2009, “Beginning PHP 5.3”, Wrox</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Nicholas Zakas, 2012, “Professional Javascript for Web Developer”, John Wiley & Sons</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5>Referensi Pendukung</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Referensi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark Pilgrim, 2010, “HTML5 Up and Running”, O’Reilly</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Steve Fulton; Jeff Fulton, 2011, “HTML5 Canvas”, O’Reilly</td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>S. Stefanor, 2010, “Javascript Patterns”, O’Reilly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        &nbsp;
+
+        <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="Pemrograman_Web/editkomponenPenilaian.html">
+              <button type="button" class="btn btn-warning no-print" style="position: absolute; right: 145px;">
+                <i class="bi bi-pencil-square"></i>
+                Edit
+              </button>
+            </a>
+            <a href="Pemrograman_Web/tambahkomponenPenilaian.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                <i class="bi bi-plus"></i>
+                Tambah
+              </button>
+            </a>
+          </div>
+
+          <h5>Komponen Penilaian</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Penilaian</th>
+                <th scope="col">Bobot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Kehadiran</td>
+                <td>10%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Tugas</td>
+                <td>10%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>Kuis</td>
+                <td>15%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>UTS</td>
+                <td>25%</td>
+              </tr>
+
+              <tr>
+                <th scope="row">5</th>
+                <td>UAS</td>
+                <td>40%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        &nbsp;
+
+        <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="Pemrograman_Web/editPertemuanMingguan.html">
+              <button type="button" class="btn btn-warning no-print" style="position: absolute; right: 145px;">
+                <i class="bi bi-pencil-square"></i>
+                Edit
+              </button>
+            </a>
+            <a href="Pemrograman_Web/tambahPertemuanMingguan.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                <i class="bi bi-plus"></i>
+                Tambah
+              </button>
+            </a>
+          </div>
+
+          <h5>Pertemuan Mingguan</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Minggu ke-</th>
+                <th scope="col">Kemampuan akhir yg diharapkan</th>
+                <th scope="col">Bahan Kajian (Materi Ajar) dan Referensi</th>
+                <th scope="col">Metode Pembelajaran dan Alokasi Waktu</th>
+                <th scope="col">Pengalaman Belajar Mahasiswa</th>
+                <th scope="col">Kriteria (Indikator) Penilaian</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  Pengenalan Web
+                  <ol type="a">
+                    <li>Web dan Hypertext Document</li>
+                    <li>Protokol HTTP (method dan status message)</li>
+                    <li>Client side (front-end)</li>
+                    <li>Server side (back-end)</li>
+                    <li>Interaksi client side dengan server side</li>
+                  </ol>
+                </td>
+                <td>Mahasiswa mampu menjelaskan konsep dasar dan komponen aplikasi berbasis web</td>
+                <td>Presentasi Dosen dan diskusi (3 x 50 menit)</td>
+                <td>Mahasiswa memberikan tanggapan tentang konsep dasar dan komponen aplikasi berbasis web</td>
+                <td>Keaktifan dan partisipasi dalam diskusi dan menjawab pertanyaan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function() {
+        sidebar.classList.toggle("active");
+        if(sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+        }
+        else {
+          sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+      }
+    </script>
+  </body>
+</html>
