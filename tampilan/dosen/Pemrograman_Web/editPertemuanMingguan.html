@@ -45,9 +45,9 @@
           </a>
         </li>
         <li>
-          <a href="komponenPenilaian.html" class="active">
+          <a href="pertemuanMingguan.html" class="active">
             <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Komponen Penilaian</span>
+            <span class="links_name">Pertemuan Mingguan</span>
           </a>
         </li>
         <li class="log_out">
@@ -58,14 +58,14 @@
         </li>
       </div>
     </div>
-    
+
     <section class="home-section">
       <nav>
         <div class="sidebar-button">
           <i class='bx bx-menu sidebarBtn'></i>
-
           <span class="dashboard">Pemrograman Web (JSI62165)</span>
         </div>
+
         <div class="profile-details">
           <!--<img src="images/profile.jpg" alt="">-->
           <span class="admin_name">Husnil Kamil</span>
@@ -76,10 +76,10 @@
       <div class="home-content">
         <div class="overview-boxes">
           <div class="right-side">
-            <div class="box-topic">Edit Komponen Penilaian</div>
+            <div class="box-topic">Edit Pertemuan Mingguan</div>
             <div class="indicator">
               <span class="text">
-                <p>Isi formulir berikut dengan sesuai </p>
+                  <p>Isi formulir berikut dengan sesuai </p>
               </span>
             </div>
           </div>
@@ -89,16 +89,36 @@
           <form>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputKomponenPenilaian">Komponen Penilaian</label>
-                <input style="margin-bottom: 10px;"type="text" class="form-control" id="inputKomponenPenilaian" placeholder="Komponen Penilaian">
+                <label style="margin-bottom: 10px;" for="inputMinggu">Minggu ke-</label>
+                <input style="margin-bottom: 10px;"type="text" class="form-control" id="inputMinggu" placeholder="Masukkan angka (1, 2, 3..)">
               </div>
 
               <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputBobot">Bobot</label>
-                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputBobot" placeholder="Bobot">
+                <label style="margin-bottom: 10px;" for="inputKemampuan">Kemampuan akhir yang diharapkan</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputKemampuan" placeholder="Kemampuan akhir yang diharapkan">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputBahan">Bahan Kajian (Materi Ajar) dan Referensi</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputBahan" placeholder="Bahan Kajian (Materi Ajar) dan Referensi">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputMetode">Metode Pembelajaran dan Alokasi Waktu</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputMetode" placeholder="Metode Pembelajaran dan Alokasi Waktu">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputPengalaman">Pengalaman Belajar Mahasiswa</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputPengalaman" placeholder="Pengalaman Belajar Mahasiswa">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputKriteria">Kriteria (Indikator) Penilaian</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputKriteria" placeholder="Kriteria (Indikator) Penilaian">
               </div>
             </div>
-
+            
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
               Ubah
             </button>
@@ -106,7 +126,7 @@
         </div>
       </div>
     </section>
-
+    
     <script>
       let sidebar = document.querySelector(".sidebar");
       let sidebarBtn = document.querySelector(".sidebarBtn");
@@ -129,10 +149,10 @@
       <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-                <h5>Komponen Penilaian berhasil diubah</h5>
+                <h5>Pertemuan Mingguan berhasil diubah</h5>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Tutup</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Tutup</button>
             </div>
           </div>
       </div>
