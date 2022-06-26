@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
-    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -27,31 +27,25 @@
       
       <div class="nav-links">
         <li>
-          <a href="../dashboardDosen.html">
+          <a href="dashboardDosen.html">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="../listRPS.html">
+          <a href="listRPS.html">
             <i class='bx bx-list-ul' ></i>
             <span class="links_name">List RPS</span>
           </a>
         </li>
         <li>
-          <a href="detailRPS.html">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Detail RPS</span>
-          </a>
-        </li>
-        <li>
-          <a href="pertemuanMingguan.html" class="active">
-            <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Pertemuan Mingguan</span>
+          <a href="tambahRPS.html" class="active">
+            <i class='bi bi-plus' ></i>
+            <span class="links_name">Tambah RPS</span>
           </a>
         </li>
         <li class="log_out">
-          <a href="../../login.html" onclick="return confirm('Apakah Anda yakin ingin Log out?');">
+          <a href="../login.html" onclick="return confirm('Apakah Anda yakin ingin Log out?');">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
@@ -63,7 +57,7 @@
       <nav>
         <div class="sidebar-button">
           <i class='bx bx-menu sidebarBtn'></i>
-          <span class="dashboard">Pemrograman Web (JSI62165)</span>
+          <span class="dashboard">Tambah RPS</span>
         </div>
 
         <div class="profile-details">
@@ -76,7 +70,7 @@
       <div class="home-content">
         <div class="overview-boxes">
           <div class="right-side">
-            <div class="box-topic">Edit Pertemuan Mingguan</div>
+            <div class="box-topic">Membuat RPS baru</div>
             <div class="indicator">
               <span class="text">
                   <p>Isi formulir berikut dengan sesuai </p>
@@ -89,38 +83,33 @@
           <form>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputMinggu">Minggu ke-</label>
-                <input style="margin-bottom: 10px;"type="text" class="form-control" id="inputMinggu" placeholder="Minggu ke- (angka)">
+                <label style="margin-bottom: 10px;" for="inputNama">Nama Mata Kuliah</label>
+                <input style="margin-bottom: 10px;"type="text" class="form-control" id="inputNamaMatkul" placeholder="Nama Mata Kuliah">
               </div>
 
               <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputKemampuan">Kemampuan akhir yang diharapkan</label>
-                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputKemampuan" placeholder="Kemampuan akhir yang diharapkan">
+                <label style="margin-bottom: 10px;" for="inputKode">Kode Mata Kuliah</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputKodeMatkul" placeholder="Kode Mata Kuliah">
               </div>
 
               <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputBahan">Bahan Kajian (Materi Ajar) dan Referensi</label>
-                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputBahan" placeholder="Bahan Kajian (Materi Ajar) dan Referensi">
+                <label style="margin-bottom: 10px;" for="inputSemester">Semester</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputSemester" placeholder="Semester (angka)">
               </div>
 
               <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputMetode">Metode Pembelajaran dan Alokasi Waktu</label>
-                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputMetode" placeholder="Metode Pembelajaran dan Alokasi Waktu">
+                <label style="margin-bottom: 10px;" for="inputSemester">Bobot SKS</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputBobotSKS" placeholder="Bobot (angka)">
               </div>
 
               <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputPengalaman">Pengalaman Belajar Mahasiswa</label>
-                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputPengalaman" placeholder="Pengalaman Belajar Mahasiswa">
-              </div>
-
-              <div class="form-group col-md-6">
-                <label style="margin-bottom: 10px;" for="inputKriteria">Kriteria (Indikator) Penilaian</label>
-                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputKriteria" placeholder="Kriteria (Indikator) Penilaian">
+                <label style="margin-bottom: 10px;" for="inputDeskripsi">Deskripsi Mata Kuliah</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputDeskripsi" placeholder="Deskripsi Mata Kuliah">
               </div>
             </div>
             
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-              Ubah
+              Tambah
             </button>
           </form>
         </div>
@@ -149,7 +138,7 @@
       <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-                <h5>Pertemuan Mingguan berhasil diubah</h5>
+                <h5>RPS berhasil ditambah</h5>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-dismiss="modal">Tutup</button>
