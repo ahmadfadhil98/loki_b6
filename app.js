@@ -19,6 +19,7 @@ app.get('/login',(req,res)=>{
   res.render(__dirname + '/views/login.ejs')
 })
 
+
 app.use(express.static('views'));
 // app.use(express.static('vendors'));
 // // app.use(express.static('css'));
