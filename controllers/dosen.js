@@ -21,4 +21,20 @@ controllers.detailRPS = async(req, res) => {
     res.render("dosen/Pemrograman_Web/detailRPS")
 }
 
+controllers.cpmk = async(req, res) => {
+    res.render("dosen/Pemrograman_Web/CPMK")
+}
+
+controllers.referensi = async(req, res) => {
+    res.render("dosen/Pemrograman_Web/referensi")
+}
+
+controllers.komponenPenilaian = async(req, res) => {
+    res.render("dosen/Pemrograman_Web/komponenPenilaian")
+}
+
+controllers.pertemuanMingguan = async(req, res) => {
+    res.render("dosen/Pemrograman_Web/pertemuanMingguan")
+}
+
 module.exports = controllers

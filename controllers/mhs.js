@@ -11,5 +11,9 @@ controllers.listRPS = async (req, res) => {
     res.render("mahasiswa/listRPS", {RPS} )
 }
 
+controllers.detailRPS = async (req, res) => {
+    res.render("mahasiswa/Pemrograman_Web/detailRPS")
+}
+
 
 module.exports = controllers

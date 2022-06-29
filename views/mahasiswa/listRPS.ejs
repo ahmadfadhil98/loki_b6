@@ -84,15 +84,16 @@
               </tr>
             </thead>
             <tbody>
+              <% RPS.forEach((R,i)=>{ %>
               <tr>
-                <th scope="row">1</th>
-                <td>JSI62165</td>
-                <td>Pemrograman Web</td>
+                <th scope="row"> <%= i+1  %> </th>
+                <td> <%= R.code %>  </td>
+                <td> <%= R.name %> </td>
                 <td>Husnil Kamil</td>
-                <td>4</td>
-                <td>3</td>
+                <td><%=R.semester%></td>
+                <td><%=R.credit%></td>
                 <td class="no-print">
-                  <a href="/Pemrograman_Web/detailRPS">
+                  <a href="/detailRPS">
                     <button style="margin-right: 5px;" type="button" class="btn btn-primary">
                       <i class='bx bx-box' ></i>
                       Detail
@@ -100,23 +101,7 @@
                   </a>
                 </td>
               </tr>
-
-              <tr>
-                <th scope="row">2</th>
-                <td>JSI62126</td>
-                <td>Rekayasa Perangkat Lunak</td>
-                <td>Dwi Welly Sukma Nirad</td>
-                <td>4</td>
-                <td>2</td>
-                <td class="no-print">
-                  <a href="#">
-                    <button style="margin-right: 5px;" type="button" class="btn btn-primary">
-                      <i class='bx bx-box' ></i>
-                      Detail
-                    </button>
-                  </a>
-                </td>
-              </tr>
+              <% }) %>
             </tbody>
           </table>
         </div>
