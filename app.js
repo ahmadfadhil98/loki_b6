@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/listRPS',(req,res)=>{
-  
   res.render(__dirname + '/views/mahasiswa/listRPS.ejs')
 })
 
@@ -20,7 +19,6 @@ app.get('/login',(req,res)=>{
   res.render(__dirname + '/views/login.ejs')
 })
 
-<<<<<<< HEAD
 app.get('/tambahRPS',(req,res)=>{
   res.render(__dirname + '/views/dosen/tambahRPS.ejs')
 })
@@ -31,14 +29,14 @@ app.get('/hasilPencarian',(req,res)=>{
 
 app.get('/dashboardMahasiswa',(req,res)=>{
   res.render(__dirname + '/views/mahasiswa/dashboardMahasiswa.ejs')
-=======
+})
+
 app.get('/dashboardDosen',(req,res)=>{
   res.render(__dirname + '/views/dosen/dashboardDosen.ejs')
 })
 
 app.get('/editkomponenPenilaian',(req,res)=>{
-  res.render(__dirname + '/views/dosen/editkomponenPenilaian.ejs')
->>>>>>> ad23d5c4a205d077ecff694446ee1fb595cbab10
+  res.render(__dirname + '/views/dosen/editkomponenDosen.ejs')
 })
 
 app.use(express.static('views'));
