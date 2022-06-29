@@ -8,8 +8,22 @@ require('dotenv').config()
 
 // Bagian test
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.render(__dirname + '/views/mahasiswa/dashboardMahasiswa.ejs')
 })
+
+app.use(express.static('views'));
+// app.use(express.static('vendors'));
+// // app.use(express.static('css'));
+// app.use(express.static('js'));
+// app.use(express.static('assets'));
+// Specific folder example
+
+app.use('', express.static(__dirname + ''))
+app.use('/styles', express.static(__dirname + 'views/styles'))
+app.use('/img', express.static(__dirname + 'views/img'))
+
+app.set('views', '/views');
+app.set('view engine', 'ejs');
 
 app.use(express.json())
 app.use(express.urlencoded({extended : true}))
