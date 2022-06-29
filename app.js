@@ -12,11 +12,24 @@ app.get('/', (req, res) => {
 })
 
 app.get('/listRPS',(req,res)=>{
+  
   res.render(__dirname + '/views/mahasiswa/listRPS.ejs')
 })
 
 app.get('/login',(req,res)=>{
   res.render(__dirname + '/views/login.ejs')
+})
+
+app.get('/tambahRPS',(req,res)=>{
+  res.render(__dirname + '/views/dosen/tambahRPS.ejs')
+})
+
+app.get('/hasilPencarian',(req,res)=>{
+  res.render(__dirname + '/views/mahasiswa/hasilPencarian.ejs')
+})
+
+app.get('/dashboardMahasiswa',(req,res)=>{
+  res.render(__dirname + '/views/mahasiswa/dashboardMahasiswa.ejs')
 })
 
 app.use(express.static('views'));
