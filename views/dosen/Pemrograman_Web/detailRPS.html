@@ -27,7 +27,7 @@
       
       <div class="nav-links">
         <li>
-          <a href="../dashboardMahasiswa.html">
+          <a href="../dashboardDosen.html">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -44,6 +44,12 @@
             <span class="links_name">Detail RPS</span>
           </a>
         </li>
+        <li class="log_out">
+          <a href="../../login.html" onclick="return confirm('Apakah Anda yakin ingin Log out?');">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
       </div>
     </div>
 
@@ -55,20 +61,12 @@
         </div>
         <div class="profile-details">
           <!--<img src="images/profile.jpg" alt="">-->
-          <a href="../../login.html" onclick="return confirm('Apakah Anda yakin ingin ke halaman Login?');">
-            <span class="admin_name">Login</span>
-          </a>
+          <span class="admin_name">Husnil Kamil</span>
+          <i class='bx bx-chevron-down' ></i>
         </div>
       </nav>
 
       <div class="home-content">
-        <div class="btn">
-          <button onClick="window.print()" type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
-            <i class="bi bi-printer"></i>
-            Cetak
-          </button>
-        </div>
-
         <div style="margin:0px 20px ;">
           <h5>Nama Mata Kuliah: Pemrograman Web</h5>
           <h5>Kode Mata Kuliah: JSI62165</h5>
@@ -89,6 +87,14 @@
         &nbsp;
 
         <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="CPMK.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                Detail
+              </button>
+            </a>
+          </div>
+
           <h5>Peta CPL ke CPMK</h5>
           <table class="table table-bordered">
             <thead>
@@ -163,6 +169,14 @@
         &nbsp;
 
         <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="referensi.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                Detail
+              </button>
+            </a>
+          </div>
+
           <h5>Referensi Utama</h5>
           <table class="table table-bordered">
             <thead>
@@ -213,6 +227,14 @@
         &nbsp;
 
         <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="komponenPenilaian.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                Detail
+              </button>
+            </a>
+          </div>
+
           <h5>Komponen Penilaian</h5>
           <table class="table table-bordered">
             <thead>
@@ -258,6 +280,14 @@
         &nbsp;
 
         <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="pertemuanMingguan.html">
+              <button type="button" class="btn btn-primary no-print" style="position: absolute; right: 20px;">
+                Detail
+              </button>
+            </a>
+          </div>
+
           <h5>Pertemuan Mingguan</h5>
           <table class="table table-bordered">
             <thead>
@@ -307,5 +337,23 @@
         }
       }
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h5>Hapus data ini?</h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" href="#" class="btn btn-danger">Hapus</button>
+            </div>
+          </div>
+      </div>
+    </div>
   </body>
 </html>

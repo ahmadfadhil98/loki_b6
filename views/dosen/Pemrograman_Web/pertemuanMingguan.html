@@ -7,7 +7,7 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -27,40 +27,34 @@
       
       <div class="nav-links">
         <li>
-          <a href="../dashboardAdmin.html">
-            <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Dashboard</span>
-          </a>
+            <a href="../dashboardDosen.html">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Dashboard</span>
+            </a>
         </li>
         <li>
-          <a href="../listRPS.html">
-            <i class='bx bx-list-ul' ></i>
-            <span class="links_name">List RPS</span>
-          </a>
+            <a href="../listRPS.html">
+                <i class='bx bx-list-ul' ></i>
+                <span class="links_name">List RPS</span>
+            </a>
         </li>
         <li>
-          <a href="dosenPengampu.html" class="active">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Dosen Pengampu</span>
-          </a>
+            <a href="detailRPS.html">
+                <i class='bx bx-box' ></i>
+                <span class="links_name">Detail RPS</span>
+            </a>
         </li>
         <li>
-          <a href="petaCPL-CPMK.html">
-            <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Peta CPL ke CPMK</span>
-          </a>
-        </li>
-        <li>
-          <a href="metodeRPS.html">
-            <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Metode RPS</span>
-          </a>
-        </li>
+            <a href="pertemuanMingguan.html" class="active">
+              <i class='bx bx-coin-stack' ></i>
+              <span class="links_name">Pertemuan Mingguan</span>
+            </a>
+          </li>
         <li class="log_out">
-          <a href="../../login.html" onclick="return confirm('Apakah Anda yakin ingin Log out?');">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Log out</span>
-          </a>
+            <a href="../../login.html" onclick="return confirm('Apakah Anda yakin ingin Log out?');">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+            </a>
         </li>
       </div>
     </div>
@@ -69,66 +63,72 @@
       <nav>
         <div class="sidebar-button">
           <i class='bx bx-menu sidebarBtn'></i>
-          <span class="dashboard">Rekayasa Perangkat Lunak (JSI62126)</span>
+          <span class="dashboard">Pemrograman Web (JSI62165)</span>
         </div>
         <div class="profile-details">
           <!--<img src="images/profile.jpg" alt="">-->
-          <span class="admin_name">Admin</span>
+          <span class="admin_name">Husnil Kamil</span>
           <i class='bx bx-chevron-down' ></i>
         </div>
       </nav>
-      
-      <div class="home-content">
-        <div class="overview-boxes">
-          <div class="right-side">
-            <div class="box-topic">Dosen Pengampu</div>
-            <div class="indicator">
-              <span class="text">
-                  <p>Dosen yang mengampu mata kuliah : </p>
-              </span>
-            </div>
-          </div>
-        </div>
 
+      <div class="home-content">
         <div style="margin:0px 20px ;">
+          <div class="btn">
+            <a href="tambahPertemuanMingguan.html">
+                <button style="position: absolute; right: 20px;" type="button" class="btn btn-primary">
+                  <i class="bi bi-plus"></i>
+                  Tambah
+                </button>
+              </a>
+          </div>
+
+          <h5>Pertemuan Mingguan</h5>
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th scope="col">No</th>
-                <th scope="col">Dosen</th>
-                <th scope="col">NIP</th>
+                <th scope="col">Minggu ke-</th>
+                <th scope="col">Kemampuan akhir yang diharapkan</th>
+                <th scope="col">Bahan Kajian (Materi Ajar) dan Referensi</th>
+                <th scope="col">Metode Pembelajaran dan Alokasi Waktu</th>
+                <th scope="col">Pengalaman Belajar Mahasiswa</th>
+                <th scope="col">Kriteria (Indikator) Penilaian</th>
                 <th scope="col">Aksi</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Dwi Welly Sukma Nirad</td>
-                <td>199108122019032018</td>
                 <td>
-                  <a href="editDosenPengampu.html">
-                    <button style="margin-right: 5px;" type="button" class="btn btn-warning">
-                      <i class="bi bi-pencil-square"></i>
-                      Edit
-                    </button></a>
-
+                  Pengenalan Web
+                  <ol type="a">
+                    <li>Web dan Hypertext Document</li>
+                    <li>Protokol HTTP (method dan status message)</li>
+                    <li>Client side (front-end)</li>
+                    <li>Server side (back-end)</li>
+                    <li>Interaksi client side dengan server side</li>
+                  </ol>
+                </td>
+                <td>Mahasiswa mampu menjelaskan konsep dasar dan komponen aplikasi berbasis web</td>
+                <td>Presentasi Dosen dan diskusi (3 x 50 menit)</td>
+                <td>Mahasiswa memberikan tanggapan tentang konsep dasar dan komponen aplikasi berbasis web</td>
+                <td>Keaktifan dan partisipasi dalam diskusi dan menjawab pertanyaan</td>
+                <td>
+                    <a href="editPertemuanMingguan.html">
+                      <button style="margin-right: 5px;" type="button" class="btn btn-warning">
+                        <i class="bi bi-pencil-square"></i>
+                        Edit
+                      </button></a>
+  
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLong">
                       <i class="bi bi-trash-fill"></i>
                       Hapus
                     </button>
-                </td>
+                  </td>
               </tr>
             </tbody>
           </table>
-            
-          <a href="tambahDosenPengampu.html">
-            <button style="margin-right: 5px;" type="button" class="btn btn-primary">
-              <svg style="margin-left:3px"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-              </svg>Tambah
-            </button>
-          </a>
-        </div> 
+        </div>
       </div>
     </section>
     
@@ -145,7 +145,7 @@
         }
       }
     </script>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -154,11 +154,11 @@
       <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-                <h5>Hapus Dosen Pengampu ini?</h5>
+                <h5>Hapus data ini?</h5>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-              <button type="button" href="#" class="btn btn-danger">Hapus</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" href="#" class="btn btn-danger">Hapus</button>
             </div>
           </div>
       </div>

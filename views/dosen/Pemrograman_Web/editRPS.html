@@ -7,7 +7,7 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -27,7 +27,7 @@
       
       <div class="nav-links">
         <li>
-          <a href="../dashboardAdmin.html">
+          <a href="../dashboardDosen.html">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -39,21 +39,9 @@
           </a>
         </li>
         <li>
-          <a href="dosenPengampu.html" class="active">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Dosen Pengampu</span>
-          </a>
-        </li>
-        <li>
-          <a href="petaCPL-CPMK.html">
-            <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Peta CPL ke CPMK</span>
-          </a>
-        </li>
-        <li>
-          <a href="metodeRPS.html">
-            <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Metode RPS</span>
+          <a href="editRPS.html" class="active">
+            <i class='bi bi-pencil-square' ></i>
+            <span class="links_name">Edit RPS</span>
           </a>
         </li>
         <li class="log_out">
@@ -69,66 +57,62 @@
       <nav>
         <div class="sidebar-button">
           <i class='bx bx-menu sidebarBtn'></i>
-          <span class="dashboard">Rekayasa Perangkat Lunak (JSI62126)</span>
+          <span class="dashboard">Pemrograman Web (JSI62165)</span>
         </div>
+
         <div class="profile-details">
           <!--<img src="images/profile.jpg" alt="">-->
-          <span class="admin_name">Admin</span>
+          <span class="admin_name">Husnil Kamil</span>
           <i class='bx bx-chevron-down' ></i>
         </div>
       </nav>
-      
+
       <div class="home-content">
         <div class="overview-boxes">
           <div class="right-side">
-            <div class="box-topic">Dosen Pengampu</div>
+            <div class="box-topic">Edit RPS</div>
             <div class="indicator">
               <span class="text">
-                  <p>Dosen yang mengampu mata kuliah : </p>
+                  <p>Isi formulir berikut dengan sesuai </p>
               </span>
             </div>
           </div>
         </div>
+        
+        <div style="margin:30px ;">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputNama">Nama Mata Kuliah</label>
+                <input style="margin-bottom: 10px;"type="text" class="form-control" id="inputNamaMatkul" placeholder="Pemrograman Web">
+              </div>
 
-        <div style="margin:0px 20px ;">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">No</th>
-                <th scope="col">Dosen</th>
-                <th scope="col">NIP</th>
-                <th scope="col">Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Dwi Welly Sukma Nirad</td>
-                <td>199108122019032018</td>
-                <td>
-                  <a href="editDosenPengampu.html">
-                    <button style="margin-right: 5px;" type="button" class="btn btn-warning">
-                      <i class="bi bi-pencil-square"></i>
-                      Edit
-                    </button></a>
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputKode">Kode Mata Kuliah</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputKodeMatkul" placeholder="JSI62165">
+              </div>
 
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLong">
-                      <i class="bi bi-trash-fill"></i>
-                      Hapus
-                    </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputSemester">Semester</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputSemester" placeholder="4">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputBobotSKS">Bobot SKS</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputBobotSKS" placeholder="3">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label style="margin-bottom: 10px;" for="inputDeskripsi">Deskripsi Mata Kuliah</label>
+                <input style="margin-bottom: 10px;" type="text" class="form-control" id="inputDeskripsi" placeholder="Deskripsi Mata Kuliah">
+              </div>
+            </div>
             
-          <a href="tambahDosenPengampu.html">
-            <button style="margin-right: 5px;" type="button" class="btn btn-primary">
-              <svg style="margin-left:3px"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-              </svg>Tambah
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              Ubah
             </button>
-          </a>
-        </div> 
+          </form>
+        </div>
       </div>
     </section>
     
@@ -145,7 +129,7 @@
         }
       }
     </script>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -154,11 +138,10 @@
       <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-                <h5>Hapus Dosen Pengampu ini?</h5>
+                <h5>RPS berhasil diubah</h5>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-              <button type="button" href="#" class="btn btn-danger">Hapus</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Tutup</button>
             </div>
           </div>
       </div>
