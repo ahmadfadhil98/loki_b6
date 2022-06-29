@@ -19,6 +19,14 @@ app.get('/login',(req,res)=>{
   res.render(__dirname + '/views/login.ejs')
 })
 
+app.get('/dashboardDosen',(req,res)=>{
+  res.render(__dirname + '/views/dosen/dashboardDosen.ejs')
+})
+
+app.get('/editkomponenPenilaian',(req,res)=>{
+  res.render(__dirname + '/views/dosen/editkomponenPenilaian.ejs')
+})
+
 app.use(express.static('views'));
 // app.use(express.static('vendors'));
 // // app.use(express.static('css'));
